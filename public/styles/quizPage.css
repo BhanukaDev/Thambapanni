@@ -17,6 +17,8 @@
   height: 100%;
   position: relative;
   margin: auto;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg); /*change this value to get 3d kinda effect lord!*/
 }
 
 .mainLand {
