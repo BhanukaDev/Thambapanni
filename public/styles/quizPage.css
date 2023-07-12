@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.quizPage {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #1773a1;
+  padding: 10px;
+}
+
+.quizMap {
+  width: 600px;
+  height: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.mainLand {
+  width: 90%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50.5%, -50.5%);
+  position: absolute;
+}
+
+.beach {
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
