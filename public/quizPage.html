@@ -4,12 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Stylings -->
     <link rel="stylesheet" href="styles/quizPage.css" />
+    <link rel="stylesheet" href="styles/destinations.css" />
+
+    <!-- Add fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Itim&family=Jua&family=Lilita+One&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Add Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Candal&family=Itim&family=Jua&family=Lilita+One&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Quiz Page</title>
+
+    <script src="scripts/quizstart.js" defer></script>
   </head>
   <body>
-    <div class="quizPage">
-      <div class="quizMap">
+    <div id="quizPage">
+      <div id="welcomeContent">
+        <span>Get ready for a</span>
+        <h1>
+          Quiztastic <br />
+          Tour!
+        </h1>
+        <div class="startQuizbtn" onclick="startQuiz()">
+          <i class="fa-solid fa-play"></i>
+          Start Quiz
+        </div>
+      </div>
+      <div id="quizMap">
         <svg
           class="beach"
           width="100%"
@@ -113,6 +145,30 @@
             </g>
           </g>
         </svg>
+        <img
+          id="lotusTower"
+          class="destination"
+          src="assets/lanka/destinations/lotusTower.svg"
+          alt="lotus tower"
+        />
+      </div>
+      <div id="quizContent">
+        <div id="topbar">
+          <h1 id="quizctTitle">Wild Life</h1>
+          <h2 id="timer">00:30</h2>
+        </div>
+        <form action="">
+          <p id="question">
+            What is the popular Sri Lankan street food known as a savory pastry
+            filled with spiced vegetables or meat?
+          </p>
+          <div class="answerContainer">
+            <button id="ans1">Kothu Roti</button>
+            <button id="ans2">Samosa</button>
+            <button id="ans3">Pol Sambol</button>
+            <button id="ans4">Lamprais</button>
+          </div>
+        </form>
       </div>
     </div>
   </body>

@@ -1,0 +1,17 @@
+.destination{
+    position: absolute;
+    z-index: 2000;
+    -webkit-filter: drop-shadow(12px -5px 7px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(12px -5px 7px rgba(0, 0, 0, 0.5));
+}
+
+.destination:hover{
+    -webkit-filter: drop-shadow(0px 0px 7px #ffd00080);
+    filter: drop-shadow(0px 0px 10px #ffd00080);
+}
+
+#lotusTower{
+    height: 300px;
+    left: 90px;
+    bottom: 300px;  
+}
