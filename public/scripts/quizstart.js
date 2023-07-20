@@ -1,4 +1,11 @@
 function startQuiz() {
   const welcomeContent = document.getElementById('welcomeContent');
-  welcomeContent.style.display = 'none';
+  const quizContent = document.getElementById('quizContent');
+
+  setTimeout(function () {
+    welcomeContent.style.display = 'none';
+    quizContent.style.display = 'flex';
+  }, 500);
 }
+
+function setQuizMap() {}
