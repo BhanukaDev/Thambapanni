@@ -3,14 +3,18 @@
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  transition: 500ms;
+  transition: 800ms;
+  -webkit-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
+
 }
 
 #quizPage {
   width: 100vw;
   height: 100vh;
   position: relative;
-  background-color: #5484f5;
+  background-color: #419ad9;
   display: flex;
   overflow: hidden;
 }
@@ -37,6 +41,7 @@
 .seaBlob{
   left: 50%;
   top: 50%;
+  width: 1000px;
   transform: translate(-50%, -50%);
   position: absolute;
   z-index: -99;
@@ -45,7 +50,9 @@
 #welcomeContent{
   color: white;
   margin: auto;
-  /* display: none; delete this */
+  transform: width 0.6 ease;
+  position: relative;
+  left: 0%;
 
 }
 
@@ -74,6 +81,7 @@ span{
   justify-content: center;
   align-items: center;
   gap: 12px;
+  cursor: pointer;
 
 }
 
@@ -94,7 +102,11 @@ span{
   /* display: flex; */
   display: none;
   flex-direction: column;
+  position: relative;
+  right: -100%;
   padding: 25px 30px;
+  z-index: 30;
+  overflow-y: scroll;
 }
 
 
@@ -103,20 +115,20 @@ span{
   width: 100%;
   display: flex;
   justify-content: space-between;
-  
+  align-items: start;
 
 }
 
 #quizContent h1{
 
-  font-size: 72px;
+  font-size: 52px;
   font-family: 'Jua', sans-serif;
   font-weight: bold;
 
 }
 
 #timer{
-  font-size: 48px;
+  font-size: 38px;
   font-family: 'Candal', sans-serif;
   color: #44cb4f;
 }
@@ -124,6 +136,16 @@ span{
 #question{
   font-size: 28px;
   padding-top: 60px;
+}
+
+#qNo{
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-family:'Anton',sans-serif;
+  color: rgb(255, 252, 230);
+  text-shadow: 2px 2px #ff0000;
+  display: none;
 }
 
 .answerContainer{
@@ -136,16 +158,19 @@ span{
   font-size: 24px;
   font-weight: bold;
   text-align: left;
-  background-color: #bff36d;
+  background: #bff36d;
   border-radius: 10px;
   padding: 15px 25px;
   border: 2px solid #73ce03;
   margin: 5px 0px;
+  cursor: pointer;
 
 }
 
 .btn:hover{
-  background-color: #a5e047;
+  color: white;
+  background: #799b44;
+  border-color: #293b09;
 }
 .bottomBar{
   display: flex;
@@ -153,11 +178,91 @@ span{
   margin-top: 30px;
 }
 .nextbtn{
-  background-color: #d37cdb;
-  border: 2px solid #ba52c4;
+  background: #1337a3;
+  border: 2px solid #170234;
+  color: white;
+  font-family: 'Candal', sans-serif;
+
+
+}
+
+.correct{
+  background: #36cb23;
+  color: white;
+}
+
+.correct:hover{
+  background: #2ab817;
+}
+
+.incorrect{
+  background: #f1423c;
+  color: white;
+  border-color: red;
+}
+
+.incorrect:hover{
+  background: #f52c25;
+
 }
 
 .nextbtn:hover{
-  background-color: #b94fc3;
+  background: #0b1021;
 }
 
+#scoreboard{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 500;
+
+}
+
+.scorecontainer{
+  background-color: #0b1944;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(247, 255, 213);
+  padding: 30px 40px 40px 40px;
+  border-radius: 10px;
+  font-size: 16px;
+  max-width: 400px;
+  position: relative;
+}
+.scorecontainer h1{
+  font-size: 40px;
+}
+
+#scoretxt{
+  margin-top: 26px;
+}
+
+#motiveword{
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#closebtn{
+  padding: 0.5px 8px;
+  border-radius: 50px;
+  border: none;
+  font-size: 20px;
+  position: absolute;
+  right: -15.5px;
+  top: -15.5px;
+  box-shadow: 0px 0px 15px rgb(165, 165, 165);
+}
+#closebtn:hover{
+  scale: 1.1;
+}

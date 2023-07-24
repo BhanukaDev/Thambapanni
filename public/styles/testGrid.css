@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: red;
+}
+body{
+    background-color: violet;
+}
+
+.imgcont > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgcont {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px.1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.imgcont > div > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.imgcont .big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.imgcont .tall {
+    grid-row: span 2;
+}
+
+.imgcont .wide {
+    grid-column: span 2;
+}

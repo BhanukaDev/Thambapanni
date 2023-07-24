@@ -23,10 +23,18 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Candal&family=Itim&family=Jua&family=Lilita+One&family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <title>Quiz Page</title>
 
     <script src="scripts/quizstart.js" defer></script>
+    <script src="scripts/quizHandler.js" defer></script>
   </head>
   <body>
     <div id="quizPage">
@@ -57,7 +65,7 @@
               style="
                 fill: #eccea0;
                 fill-opacity: 1;
-                stroke: #ceeefd;
+                stroke: #b3e3f9;
                 stroke-width: 19.7689;
                 stroke-linecap: round;
                 stroke-linejoin: round;
@@ -138,8 +146,8 @@
           height="1337.7831"
           viewBox="0 0 1060.6088 1337.7831"
           version="1.1"
-          class="seaBlob"
           id="svg5"
+          class="seaBlob"
           xml:space="preserve"
           inkscape:export-filename="seablob2.svg"
           inkscape:export-xdpi="96"
@@ -150,6 +158,27 @@
           xmlns="http://www.w3.org/2000/svg"
           xmlns:svg="http://www.w3.org/2000/svg"
         >
+          <sodipodi:namedview
+            id="namedview7"
+            pagecolor="#ffffff"
+            bordercolor="#000000"
+            borderopacity="0.25"
+            inkscape:showpageshadow="2"
+            inkscape:pageopacity="0.0"
+            inkscape:pagecheckerboard="0"
+            inkscape:deskcolor="#d1d1d1"
+            inkscape:document-units="px"
+            showgrid="false"
+            inkscape:zoom="0.36525829"
+            inkscape:cx="948.64376"
+            inkscape:cy="418.88166"
+            inkscape:window-width="1440"
+            inkscape:window-height="900"
+            inkscape:window-x="0"
+            inkscape:window-y="0"
+            inkscape:window-maximized="0"
+            inkscape:current-layer="layer1"
+          />
           <defs id="defs2" />
           <g
             inkscape:label="Layer 1"
@@ -159,7 +188,7 @@
           >
             <path
               style="
-                fill: #76e8e8;
+                fill: #a0d4d4;
                 fill-opacity: 1;
                 stroke: none;
                 stroke-width: 0.50695;
@@ -172,13 +201,14 @@
                 attributeName="d"
                 dur="15s"
                 repeatCount="indefinite"
-                values="m 1329.8494,155.64957 c 0,0 -116.7966,83.65208 -139.479,220.94619 -22.6825,137.29411 9.0907,304.03159 9.0907,304.03159 0,0 9.5492,149.62276 151.3346,207.85782 151.0378,62.03523 456.9288,13.36666 506.7317,-176.05871 49.8028,-189.42532 -90.1298,-413.33225 -90.1298,-413.33225 0,0 -172.6275,-325.530355 -437.5482,-143.44464 z;                 
-                m 1422.918,116.37456 c 0,0 -217.7694,59.49964 -237.9213,216.93463 -20.1517,157.43499 15.2768,363.20233 15.2768,363.20233 0,0 38.4848,168.65829 187.2521,217.95282 141.2546,46.80508 421.5506,96.91756 465.797,-120.29635 44.2465,-217.21376 -82.4742,-465.2258 -82.4742,-465.2258 0,0 -112.5664,-421.365103 -347.9304,-212.56763 z;                 
-                m 1329.8494,155.64957 c 0,0 -116.7966,83.65208 -139.479,220.94619 -22.6825,137.29411 9.0907,304.03159 9.0907,304.03159 0,0 9.5492,149.62276 151.3346,207.85782 151.0378,62.03523 456.9288,13.36666 506.7317,-176.05871 49.8028,-189.42532 -90.1298,-413.33225 -90.1298,-413.33225 0,0 -172.6275,-325.530355 -437.5482,-143.44464 z;               "
+                values="m 1329.8494,155.64957 c 0,0 -116.7966,83.65208 -139.479,220.94619 -22.6825,137.29411 9.0907,304.03159 9.0907,304.03159 0,0 9.5492,149.62276 151.3346,207.85782 151.0378,62.03523 456.9288,13.36666 506.7317,-176.05871 49.8028,-189.42532 -90.1298,-413.33225 -90.1298,-413.33225 0,0 -172.6275,-325.530355 -437.5482,-143.44464 z;
+                m 1422.918,116.37456 c 0,0 -217.7694,59.49964 -237.9213,216.93463 -20.1517,157.43499 15.2768,363.20233 15.2768,363.20233 0,0 38.4848,168.65829 187.2521,217.95282 141.2546,46.80508 421.5506,96.91756 465.797,-120.29635 44.2465,-217.21376 -82.4742,-465.2258 -82.4742,-465.2258 0,0 -112.5664,-421.365103 -347.9304,-212.56763 z;
+                m 1329.8494,155.64957 c 0,0 -116.7966,83.65208 -139.479,220.94619 -22.6825,137.29411 9.0907,304.03159 9.0907,304.03159 0,0 9.5492,149.62276 151.3346,207.85782 151.0378,62.03523 456.9288,13.36666 506.7317,-176.05871 49.8028,-189.42532 -90.1298,-413.33225 -90.1298,-413.33225 0,0 -172.6275,-325.530355 -437.5482,-143.44464 z"
               ></animate>
             </path>
           </g>
         </svg>
+
         <img
           id="lotusTower"
           class="destination"
@@ -186,25 +216,54 @@
           alt="lotus tower"
         />
       </div>
+      <span id="qNo"> 5/10 </span>
       <div id="quizContent">
         <div id="topbar">
           <h1 id="quizctTitle">Wild Life</h1>
-          <h2 id="timer">00:30</h2>
-        </div>
-        <form action="">
-          <p id="question">
-            What is the popular Sri Lankan street food known as a savory pastry
-            filled with spiced vegetables or meat?
-          </p>
-          <div class="answerContainer">
-            <button class="btn" id="ans1">Kothu Roti</button>
-            <button class="btn" id="ans2">Samosa</button>
-            <button class="btn" id="ans3">Pol Sambol</button>
-            <button class="btn" id="ans4">Lamprais</button>
+          <div style="display: flex; align-items: center; gap: 10px">
+            <h2 id="timer">00:30</h2>
+            <i
+              class="fa-regular fa-clock"
+              style="color: #000000; font-size: 40px"
+            ></i>
           </div>
-        </form>
+        </div>
+        <p id="question">
+          What is the popular Sri Lankan street food known as a savory pastry
+          filled with spiced vegetables or meat?
+        </p>
+        <div class="answerContainer">
+          <button class="btn" id="ans1" onclick="selectAnswer(event)">
+            Kothu Roti
+          </button>
+          <button class="btn" id="ans2" onclick="selectAnswer(event)">
+            Samosa
+          </button>
+          <button class="btn" id="ans3" onclick="selectAnswer(event)">
+            Pol Sambol
+          </button>
+          <button class="btn" id="ans4" onclick="selectAnswer(event)">
+            Lamprais
+          </button>
+        </div>
         <div class="bottomBar">
-          <button class="btn nextbtn">Next</button>
+          <button class="btn nextbtn" onclick="submitQuestion()">Next</button>
+        </div>
+      </div>
+      <div id="scoreboard">
+        <div class="scorecontainer">
+          <button id="closebtn" onclick="restartQuiz()">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <h1>Congratulations!</h1>
+          <h2 id="scoretxt">Score : 5</h2>
+          <h2 id="questxt">Questions : 8</h2>
+          <h2 id="wrnganstxt">Wrong Answers : 2</h2>
+          <h2 id="msdtxtx">Missed Answers : 3</h2>
+          <h2 id="tmertxt">Time : 40s</h2>
+          <p id="motiveword">
+            Impressive! Perfect score! You're a true expert!
+          </p>
         </div>
       </div>
     </div>
