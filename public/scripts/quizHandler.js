@@ -356,6 +356,8 @@ function submitQuestion() {
 }
 
 function quizOver() {
+  const cheerWord = document.getElementById('motiveword');
+
   document.getElementById(
     'questxt'
   ).textContent = `Questions : ${questions.length}`;
@@ -371,6 +373,20 @@ function quizOver() {
   document.getElementById('tmertxt').textContent = `Time : ${
     totalMins * 60 - remainTime
   }`;
+
+  if (quizScore > 8) {
+    cheerWord.textContent = "Impressive! Perfect score! You're a true expert!";
+    cheerWord.style.color = '#B1F48D';
+  } else if (quizScore > 5) {
+    cheerWord.textContent = 'Well done! Solid effort';
+    cheerWord.style.color = '#EBF48D';
+  } else if (quizScore > 3) {
+    cheerWord.textContent = "Keep going! You're on the right track!";
+    cheerWord.style.color = '#F4D78D';
+  } else {
+    cheerWord.textContent = 'Chin up! Every try counts; keep going!';
+    cheerWord.style.color = '#F4968D';
+  }
 
   document.getElementById('scoreboard').style.display = 'flex';
   stopQuizSetup();

@@ -11,32 +11,117 @@
 
 .aboutUsPage{
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 35px 40px;
 }
 
-.groupPhoto{
+.teamGrid{
     width: 90%;
-    height: 600px;
-    background-color: gainsboro;
+    height: 500px;
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    gap: 5px;
 }
 
-.groupPhoto > img {
+.grpPhoto{
+    width: 80%;
+    margin-top: 30px;
+    height: 600px;
+    background-size: cover;
+    border-radius: 20px;
+
+}
+
+.teamGrid > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+
 h2{
-    font-size: 40px;
+    font-size: 50px;
 }
 
 h2 > span{
     font-family: 'Satisfy', cursive;
 }
+
+
+.fromdev{
+    padding: 20px;
+    border: 1px solid rgb(244, 182, 120);
+    display: flex;
+    gap: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: rgb(147, 151, 154);
+}
+
+.fromdev .content{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    text-align: justify;
+
+}
+
+.fromdev .content span{
+    font-size: 16px;
+    margin-top: 10px;
+  
+}
+
+.devContainer{
+    margin-top: 60px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.userImgs{
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 5px;
+    width: 100%;
+
+}
+
+.userImgs:hover{
+    scale: 1.1;
+    z-index: 200;
+}
+
+.cardInfo{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background: linear-gradient( transparent,black);
+    padding: 20px 30px;
+    color: aliceblue;
+    position: relative;
+
+    transform: translateY(65%);
+}
+
+.cardInfo:hover{
+    transform: translateY(0);
+}
+
+.cardInfo span{
+    font-family: 'Jua', sans-serif;
+}
+
+.cardInfo h3{
+    font-family: 'Anton', sans-serif;
+}
+
