@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    margin-left: 10px;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+.container{
+    display: flex;
+    margin-top: 75px;
+
+}
+.hotel_info{
+    padding: 10px;
+    width: 700px;
+
+}
+.hotelInfo.tag #couples{
+    background-color: rgb(249, 161, 161);
+  color: #ff0000;
+  width: 70px;
+  border-color: #ff0000;
+}
+#hotelName{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 36pt;
+}
+#hotelTag{
+    font-size: 15pt;
+    font-weight: 500;
+    margin-top: 5px;
+}
+#hotelImage{
+    width: 450px;
+    border-radius: 15px;
+    margin: 15px;
+}
+.hotel_form{
+    padding: 15px;
+    margin-top: 70px;
+}
+fieldset{
+    border-radius: 10px;
+    border-color: goldenrod;
+    box-shadow: 10px 10px grey;
+    background-color: azure;
+}
+legend{
+    font-weight: bolder;
+    font-size: 19pt;
+    
+}
+label{
+    font-size: 15pt;
+    margin: 10px;
+    padding: 5px;
+}
+#no_of_guests{
+    font-size: 16pt;
+    font-weight: 500;
+}
+input{
+    font-size: 14pt;
+}
+fieldset{
+    padding: 10px;
+}
+#destinationName{
+    border-style: inset;
+    border-radius: 6px;
+    max-width: fit-content;
+    padding: 3px;
+    max-height: fit-content;
+
+    font-weight: 500;
+    font-size:14pt ;
+    background-color: white;
+}
+.contents{
+  position:relative;
+  margin-top: 20px;
+  left: 2%;
+}
+.destination{
+    display: flex;
+    margin: 8px;
+}
+.dname{
+    font-size: 15pt;
+}
+.quantity{
+    font-size: 13pt;
+    padding-left: 15px;
+    padding-right: 20px;
+    width: 110px;
+}
+.r{
+    width: 40px;
+    text-align: center;
+    border: none;
+    height: 35px;
+    background-color: transparent;
+}
+.children, .adults, .rooms{
+    display: flex;
+    margin: 4px;
+}
+.selectors{
+    border-style: groove;
+    padding: 0%;
+    height: 45px;
+}
+.minus, .plus{
+    height: 40px;
+    width: 30px;
+    border: none;
+    color: blue;
+    outline: none;
+    background-color: transparent;
+    transition: 1s;
+    font-size: 15pt;
+}
+.minus:hover{
+background-color: rgb(189, 190, 247);
+}
+.plus:hover{
+    background-color: rgb(189, 190, 247);
+    opacity: 0.6;
+    }
+ 
+.alert {
+    padding: 10px;
+    margin: 10px;
+    background-color: #ee3838;
+    color: white;
+    transition: opacity 0.5s;
+    border-radius: 10px;
+    max-width: fit-content;
+    position: absolute;
+    right: 20px;
+    top: 38%;
+      }
+
+.closebtn {
+  margin-left: 18px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.submit, .reset{
+    max-height: fit-content;
+    text-align: center;
+    border-radius: 5px;
+    padding: 4px;
+    margin: 5px;
+    padding-bottom: 5px;
+    border-style: ridge;
+    border-color: blue;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 13pt;
+    cursor: pointer;
+    transition: 1s;
+    outline: none;
+}
+.submitForm{
+    position: relative;
+    display: flex;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.submit:hover,
+ .reset:hover{
+    background: rgb(0, 25, 212);
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+   transform: translateY(-0.25em);
+
+}
+.submit{
+    margin-left:40%;
+}
+.reset{
+    margin-left: 15%;
+}
+
+#dateOutput{
+    margin: 10px;
+    padding: 6px;
+    border-style: none;
+    max-width: fit-content;
+    transition: 1s;
+    box-shadow: inset;
+    border-width: 2px;
+    transition-delay: 1s;
+    color: blue;
+    border-radius: 4px;
+    background-color: rgb(210, 210, 255);
+}
+#Totdays{
+    color: rgb(4, 4, 163);
+}
+#c1, #c2, #c3, #c4{
+  text-align: center;
+}
+.person{
+  width: 17px;
+}
+
+#hotelDescription{
+    font-size: 15pt;
+    color: grey;
+}
+.rate{
+    font-size: 14pt;
+    position: relative;
+    color: #ebdb00;
+    left: 3%;
+}
+#hotelPrice {
+  font-size: 24pt;
+  color: #04b135; 
+  font-weight: 700;
+  position: relative;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  animation: glowAnimation 2s infinite;
+}
+#hotelPrice, 
+#HotelRatings,
+#hotelDescription{
+    margin: 5px;
+    padding: 10px;
+}
+#hotelTag{
+    max-height: fit-content;
+    max-width: fit-content;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: 500;
+}
+/* Styles for the "couples" tag */
+.couples-tag {
+    font-weight: bold;
+    color: red;
+    background-color: rgb(249, 161, 161);
+    color: #ff0000;
+    max-width: fit-content;
+    border-color: #ff0000;
+
+  }
+  
+  /* Styles for the "friends" tag */
+  .friends-tag {
+    background-color: rgb(250, 250, 141);
+    color: rgba(188, 199, 36, 0.942);
+  }
+  
+  /* Styles for the "family" tag */
+  .family-tag {
+    background-color: rgb(61, 141, 254);
+    color: rgb(29, 0, 161);
+  }
+
+  table, td, th {
+    border: 1px rgb(35, 146, 198) solid;
+    padding: 0px;
+    padding-left: 5px;
+    border-radius: 2px;
+  }
+.couples_head{
+    background-color: #ff0000;
+    font-size:11pt;
+    height: 70px;
+    color: white;
+    border: 1px rgb(170, 0, 0) solid;
+
+}
+.friends_head{
+    background-color: #ebdb00;
+    font-size:11pt;
+    height: 70px;
+    color: white;
+    border: 1px rgb(192, 170, 4) solid;
+}
+.couples_des{
+    border: 1px rgb(170, 0, 0) solid;
+}
+.friends_des{
+    border: 1px rgb(192, 170, 4) solid;
+}
+  table {
+    width: 98%;
+    border-collapse: collapse;
+    font-size: 10pt;
+    max-height: max-content;
+
+    
+  }  
+  .tableTopic{
+    font-size: 14pt;
+  }
+  th {
+    font-size:11pt;
+    height: 70px;
+    color: white;
+    background-color: rgba(0, 76, 255, 0.896);
+  }
+  td{
+    max-height: fit-content;
+    max-width: fit-content;
+    padding: 5px;
+  }
+  .rprice{
+    font-size:13pt;
+    font-weight: bold;
+  }
+  .tax{
+    font-size: 9pt;
+    color: grey;
+  }
+
+  select, option {
+    width: 40px;
+  }
+
+  .hid{
+    padding-left: 5px;
+    margin-left: 10px;
+    text-align: left;
+    vertical-align: top;
+    background-color: rgb(225, 255, 179);
+
+  }
+  .total_info{
+    padding:15px;
+
+  }
+  #reserve{
+    margin-left: 30px;
+    font-size: 15pt;
+  }
+  
+  hr{
+    color: gray;
+    margin-left: 0;
+    padding: 0;
+    opacity: 0.7;
+  }
+  .tableSub{
+    font-size: 11pt;
+    padding: 3px;
+  }
+  .trooms{
+    padding: 2px;
+  }
+  .selectop{
+    margin: 15px;
+    padding: 5px;
+  }
+  #totrooms{
+    font-weight: bold;
+    font-size: 12pt;
+
+  }
+  #final_tot{
+    font-size: 16pt;
+  }
+  #total{
+    margin: 3px;
+    padding: 5px;
+  }
+  #reserve{
+    
+    background-color: chartreuse;
+    border: white;
+    border-radius: 5px;
+    width: 130px;
+    height: 45px;
+    color: white;
+    transition: 1s;
+    font-family: 'Lunasima', sans-serif;
+  }
+  #reserve:hover{
+    font-family: 'Lato', sans-serif;
+    transform: scale(1.2);
+    background-color: rgb(7, 185, 7);
+    border: 2px green;
+  }
+
+  #r_alert{
+    top:17%;
+    left: 58%;
+    height: 60px;
+  }
+/* Disable the default add and reduce buttons in the number type */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+/* Animations */
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulseAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply pulse animation to reserve button on hover */
+#reserve:hover {
+  animation: pulseAnimation 1s infinite;
+}
+
+/* Add a subtle glow effect to the hotel name */
+#hotelName {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Add a glow effect to the hotel tags */
+.tag {
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+}
+
+/* Add a glow effect to the form fields */
+fieldset {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Add a glow effect to the reservation alert */
+.alert {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+@keyframes glowAnimation {
+  0% {
+    opacity: 0.8;
+    text-shadow: 2px 2px 8px rgba(40, 157, 17, 0.7);
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 2px 2px 12px rgba(40, 157, 17, 0.9);
+  }
+  100% {
+    opacity: 0.8;
+    text-shadow: 2px 2px 8px rgba(40, 157, 17, 0.7);
+  }
+}
+
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rating Page</title>
+    <link rel="stylesheet" href="styles/rating_page.css" />
+    <link rel="stylesheet" type="text/css" href="styles/headnfoot.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <div class="logo">
+          <a href="mainpage.html">
+            <img
+              id="logoimg"
+              src="Assets/logoBlack.png"
+              alt=""
+              height="50"
+              alt="logo"
+          /></a>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="gallery.html" class="active">Gallery </a>
+            </li>
+            <li>
+              <a href="welcomeToStore.html">Store </a>
+            </li>
+            <li>
+              <a href="">Quiz</a>
+            </li>
+            <li>
+              <a href="">Discover</a>
+            </li>
+            <li>
+              <a href="comment_page.html">Say, hi </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-right">
+        <div class="login-signup">
+          <a href="">Login</a> or <a href="signup_page.html">Signup</a>
+        </div>
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="app">
+      <div class="rating">
+        <div class="rating_average">
+          <h1>4.5</h1>
+          <div class="Star_outer">
+            <div class="star_inner">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          </div>
+          <p>290,291</p>
+        </div>
+      </div>
+      <div class="rating_progress">
+        <!-- Data is now dynamically generated -->
+      </div>
+    </div>
+    <footer>
+      <h3 class="foothead">Thambapanni</h3>
+      <div>
+        <a href="editorpagefaizul.html"> Faizul</a> |
+        <a href="editorpageosh.html"> Oshada</a> |
+        <a href="bhanukaEditor.html"> Bhanuka</a> |
+        <a href="editorpageRuhini.html"> Ruhini</a>
+      </div>
+      © Copyright 2023 Design by Faizul Barie
+    </footer>
+    <script>
+      let data = [
+        {
+          Star: 5,
+          count: 99980,
+        },
+        {
+          Star: 4,
+          count: 39300,
+        },
+        {
+          Star: 3,
+          count: 25050,
+        },
+        {
+          Star: 2,
+          count: 10070,
+        },
+        {
+          Star: 1,
+          count: 5020,
+        },
+      ];
+
+      data.forEach((rating) => {
+        let rating_progress = `
+            <div class="rating_progress_value">
+                <p>${rating.Star} <span class="Star">&#9733;</span></p>
+                <div class="progress">
+                    <div class="bar" style="width: ${
+                      rating.count / 1000
+                    }%;"></div>
+                </div>
+                <p>${rating.count}k</p>
+            </div>`;
+
+        document.querySelector(".rating_progress").innerHTML += rating_progress;
+      });
+    </script>
+  </body>
+</html>

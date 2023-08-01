@@ -1,0 +1,87 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .editorcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 100px;
+    position: absolute;
+  }
+  
+  .editorinfo {
+    padding: 20px;
+    margin-top: 70px;
+    text-align: center;
+    position: center;
+    line-height: 40px;
+  }
+  
+  .editorinfo h1 {
+    font-family: "Rock Salt", cursive;
+
+  }
+  
+  .editorinfo h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+
+
+  }
+  
+  .editorinfo p {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+  }
+  
+  .editorinfo h2 a {
+    font-family: "Belleza", sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    color: rgb(192, 195, 10);
+    text-decoration: none;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    transition: all 2s;
+
+  }
+  h2:hover{
+    color: chartreuse;
+    transform: scale(1.1);
+  }
+  
+  .editorinfo img {
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.325);
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  #goBack{
+    font-size: 15pt;
+    justify-content: center;
+    background-color: rgb(28, 222, 22);
+    color: white;
+    text-align: center;
+    border-color: beige;
+    border-radius: 5px;
+    height: 35px;
+    position: relative;
+    left: 47%;
+    margin: 20px;
+  }
+
+  #goBack:hover{
+    background-color: chocolate;
+  }
+  

@@ -1,0 +1,111 @@
+:root {
+    --primary: #fbfbfb;
+    --secondary: hwb(123 30% 20%);
+    --text-color: #fff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  .app {
+    min-height: 100vh;
+    background-color: var(--primary);
+    color: #000;
+    display: grid;
+    place-items: center;
+  }
+
+  .app {
+    background-image: url('main.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+  
+  .rating_average {
+    width: max-content; /* Set the width to automatically fit the content */
+    height: 100%;
+    background-color: var(--secondary);
+    padding: 1rem;
+    border-radius: 2rem;
+    text-align: center;
+    margin-right: 100px;
+  }
+  .rating_average .Star_outer{
+    font-size: 50px;
+    padding:0;
+  }
+  
+  .rating_average h1 {
+    font-size: 8rem;
+    margin-right: 10px;
+  }
+  
+  .rating p {
+    margin-left: px; /* Adjust the value to your desired spacing */
+    letter-spacing: 0rem;
+    font-size: 30px;
+   
+
+  }
+  
+  .rating_progress {
+    width: 100%;
+    height: ;
+    column-gap: 1rem;
+    margin-right: 300px;
+  }
+  
+  .rating_progress_value {
+    height: 3rem;
+    width:100%;
+    column-gap: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .rating_progress_value .Star {
+    font-size: 1.2rem;
+    color: rgb(153, 131, 5);
+  }
+  
+  .rating_progress_value p:last-child {
+    width: 10%;
+    height:;
+  }
+  
+  .rating_progress .progress {
+    flex: 1 1 0;
+    height: 0.5rem;
+    background-color: rgb(177, 183, 176);
+  }
+  
+  .bar {
+    height: 100%;
+    background-color: rgb(150, 129, 9);
+    width: 80%;
+  }
+  
+  /* Move the rating container to the left of the rating progress */
+  @media (min-width: 768px) {
+    .app {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .rating_container {
+      order: 1;
+    }
+  
+    .rating_progress {
+      order: 2;
+    }
+  }
+  
+  .star_inner i.active {
+    color: rgb(219, 188, 16);
+}

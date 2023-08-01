@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lunasima&display=swap" rel="stylesheet">
+
+    <script src="src/hotel_review.js" defer></script>
+    <link rel="stylesheet" href="styles/hotel_review.css" />
+    <link rel="stylesheet" type="text/css" href="styles/headnfoot.css" />
+    <title>Hotel Review</title>
+  </head>
+  <body class="entire">
+    <header>
+      <div class="header-left">
+        <div class="logo">
+          <a href="mainpage.html">
+            <img
+              id="logoimg"
+              src="Assets/logoBlack.png"
+              alt=""
+              height="50"
+              alt="logo"
+          /></a>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="gallery.html" class="active">Gallery </a>
+            </li>
+            <li>
+              <a href="welcomeToStore.html">Store </a>
+            </li>
+            <li>
+              <a href="">Quiz</a>
+            </li>
+            <li>
+              <a href="">Discover</a>
+            </li>
+            <li>
+              <a href="comment_page.html">Say, hi </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-right">
+        <div class="login-signup">
+          <a href="">Login</a> or <a href="signup_page.html">Signup</a>
+        </div>
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="hotel_info">
+        <h2 id="hotelName"></h2>
+        <p id="hotelTag"  class="tag"></p>
+        <img id="hotelImage" src="" alt="" />
+        <p id="hotelDescription"></p>
+        <p id="hotelRatings" class="rate"></p>
+        <p id="hotelPrice"></p>
+      </div>
+
+      <div class="hotel_form">
+      <form>
+        <fieldset>
+        <legend>Check Availability</legend>
+        <div class="destination">  
+          <p class="dname">Destination: <span id="destinationName"></p>
+        </div>
+        <label>Check-in:
+          <input type="date" class="datepicker" min="today" max="2023-12-30" id="check-in" required/></label>
+        <label>Check-out: <input type="date" class="datepicker" max="2023-12-31" id="check-out" required/></label>
+        <div id="dateOutput" style="display:none">
+          <p>Total Number of days: <span id="Totdays"></span></p>
+        </div>
+        <div class="guestno">
+          <p id="no_of_guests">No. of guests:</p>
+          <div class="addguests">
+            <div class="alert" style="display: none">
+              <span class="closebtn">&times;</span>
+              <p></p>
+            </div>
+            <div class="adults">
+              <label class="quantity">Adults  </label>
+              <div class="selectors">
+                <input type="button"  value="-"  class="minus"  data-target="adult_no" />
+                <input  type="number"  class="r"  id="adult_no"  value="2"  min="1"  max="15" onkeydown="return false"/>
+                <input  type="button"  value="+"  class="plus"  data-target="adult_no" />
+              </div>
+            </div>
+            <div class="children">
+              <label class="quantity">Children  </label>
+              <div class="selectors">
+                <input type="button"  value="-"  class="minus"  data-target="children_no" />
+                <input  type="number"  class="r"  id="children_no"  value="0"  min="0"  max="12" onkeydown="return false"/>
+                <input  type="button"  value="+"  class="plus"  data-target="children_no" />
+              </div>
+            </div>
+            <div class="rooms">
+              <label class="quantity">Rooms </label>
+              <div class="selectors">
+                <input  type="button"  value="-"  class="minus"  data-target="room_no" />
+                <input  type="number"  class="r"  id="room_no"  value="1"  min="1"  max="15" onkeydown="return false"/>
+                <input  type="button"  value="+"  class="plus"  data-target="room_no" />
+              </div>
+            </div>
+            <div class="submitForm">
+            <input type="reset" value="Clear all" class="reset" onclick="Hide(dateOutput)">
+            <input type="submit" value="Search" class="submit" onclick="unHide(dateOutput)">
+          </div>
+          </div>
+        </div>
+        </fieldset>
+      </div>
+      </div>
+        <div class="contents">
+          <table>
+            <tr>
+            <th id="thead" style="width:35%">Room Type</th>
+            <th id="thead1">Number of guests</th>
+            <th id="thead2">Price</th>
+            <th id="thead3">Your choice</th>
+            <th id="thead4">Select amount</th>
+            <th id="thead5"></th>
+            </tr>
+            <tr id="deluxe1" class="trooms">
+              <td><span class="tableTopic"><a href="https://www.booking.com/hotel/lk/marino-beach-colombo.html?aid=7989935&label=lh_homepage&sid=6f734352ded7c5251e9f6f8012f9136f&sb=1&src=hotel&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Fhotel%2Flk%2Fmarino-beach-colombo.en-us.html%3Faid%3D7989935%26label%3Dlh_homepage%26sid%3D6f734352ded7c5251e9f6f8012f9136f%26all_sr_blocks%3D376535103_175111083_0_0_0%3Bcheckin%3D2023-08-08%3Bcheckout%3D2023-08-09%3Bdest_id%3D-2214877%3Bdest_type%3Dcity%3Bdist%3D0%3Bgroup_adults%3D2%3Bgroup_children%3D0%3Bhapos%3D1%3Bhighlighted_blocks%3D376535103_175111083_0_0_0%3Bhpos%3D1%3Bmatching_block_id%3D376535103_175111083_0_0_0%3Bno_rooms%3D1%3Breq_adults%3D2%3Breq_children%3D0%3Broom1%3DA%252CA%3Bsb_price_type%3Dtotal%3Bsr_order%3Dpopularity%3Bsr_pri_blocks%3D376535103_175111083_0_0_0__7500%3Bsrepoch%3D1689916866%3Bsrpvid%3D119925a0d6e205c2%3Btype%3Dtotal%3Bucfs%3D1%26%26&highlighted_hotels=3765351&hp_sbox=1&origin=hp&hp_avform=1&do_availability_check=on&stay_on_hp=1&checkin_year=2023&checkin_month=8&checkin_monthday=8&checkout_year=2023&checkout_month=8&checkout_monthday=9&group_adults=1&group_children=0&no_rooms=1&b_h4u_keep_filters=&from_sf=1#RD376535115"> Deluxe Room</a></span>
+                <br><span class="tableSub">
+                1 king bed 
+    This king room has a balcony, attached bathroom. Guests have privileged access to the infinity pool & rooftop garden.
+    </span><br><hr>✓Free toiletries ✓Shower ✓Safe Bidet ✓Toilet ✓Towels ✓Socket near the bed ✓Desk ✓TV ✓Telephone 
+    ✓Ironing facilities ✓Satellite channels ✓Tea/Coffee maker ✓Hairdryer ✓Fan ✓Electric kettle ✓Wake-up service Alarm clock ✓Wardrobe or closet ✓Toilet paper
+    </td>
+              <td id="c1"><img src="Assets/person.png" alt="person" class="person"/></td>
+              <td><p><span id="roomPrice" class="rprice"></span>/ day</p>
+                <p class="tax">+<span id="dhandlingFee"></span> taxes and charges</p></td>
+              <td>Excellent breakfast included
+                Free cancellation anytime
+                No prepayment needed – pay at the property
+              </td>
+              <td>
+                
+                <select class="selectop" id="d1options"></select>
+              <td class="hid" rowspan="4">
+                <p id="total"  style="visibility:collapse;">
+                  <span id="totrooms"></span> rooms for<br> 
+                  <span id="final_tot"></span><br> <span class="tax">+ 
+                  <span id="final_hand"></span> tax and charges</span>
+                </p>
+                <div class="buttonclick">
+                  <a href="reserve.html" >
+                <button id="reserve" onclick="sendHotelInfo(event)">Reserve</button></a>
+                <div class="alert" id="r_alert" style="display: none">
+              <span class="closebtn">&times;</span>
+              <p></p>
+                </div>
+              </div>
+                <ul class="total_info">
+                  <li>Confirmation is immediate</li>
+                   <li> No booking or credit card fees!</li>
+                </ul>
+              </td>
+    
+            </tr>
+            <tr id="deluxe2" class="trooms">
+              <td><span class="tableTopic"><a href="https://www.booking.com/hotel/lk/marino-beach-colombo.html?aid=7989935&label=lh_homepage&sid=6f734352ded7c5251e9f6f8012f9136f&sb=1&src=hotel&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Fhotel%2Flk%2Fmarino-beach-colombo.en-us.html%3Faid%3D7989935%26label%3Dlh_homepage%26sid%3D6f734352ded7c5251e9f6f8012f9136f%26all_sr_blocks%3D376535103_175111083_0_0_0%3Bcheckin%3D2023-08-08%3Bcheckout%3D2023-08-09%3Bdest_id%3D-2214877%3Bdest_type%3Dcity%3Bdist%3D0%3Bgroup_adults%3D2%3Bgroup_children%3D0%3Bhapos%3D1%3Bhighlighted_blocks%3D376535103_175111083_0_0_0%3Bhpos%3D1%3Bmatching_block_id%3D376535103_175111083_0_0_0%3Bno_rooms%3D1%3Breq_adults%3D2%3Breq_children%3D0%3Broom1%3DA%252CA%3Bsb_price_type%3Dtotal%3Bsr_order%3Dpopularity%3Bsr_pri_blocks%3D376535103_175111083_0_0_0__7500%3Bsrepoch%3D1689916866%3Bsrpvid%3D119925a0d6e205c2%3Btype%3Dtotal%3Bucfs%3D1%26%26&highlighted_hotels=3765351&hp_sbox=1&origin=hp&hp_avform=1&do_availability_check=on&stay_on_hp=1&checkin_year=2023&checkin_month=8&checkin_monthday=8&checkout_year=2023&checkout_month=8&checkout_monthday=9&group_adults=1&group_children=0&no_rooms=1&b_h4u_keep_filters=&from_sf=1#RD376535115"> Superior Double Room <a></span>
+                <br><span class="tableSub">
+                1 full bed 
+                Offers scenic views of the garden, room features heavy wooden carvings.
+              </span><br><hr>
+                ✓Hot tub ✓Free toiletries ✓Bathrobe ✓Safe Bidet ✓Sofa ✓Bathtub or shower ✓Towels ✓Linens 
+                ✓Socket near the bed ✓Cleaning products ✓Tile/Marble floor ✓Desk ✓Sitting area ✓TV ✓Slippers 
+                ✓Telephone ✓Ironing facilities ✓Satellite channels 
+              </td>
+              <td id="c2"><img src="Assets/person.png" alt="person" class="person"/><img src="Assets/person.png" alt="person" class="person"/> </td>
+              <td><p><span id="pDroomPrice" class="rprice"></span>/ day</p>
+                <p class="tax">+<span id="d2handlingFee"></span> taxes and charges</p></td>
+              <td>Breakfast LKR 4,858 (optional)
+                Free cancellation 
+                No prepayment needed – pay at the property
+              </td><td>
+                
+              <select class="selectop"id="d2options"></select></td>
+            </tr>
+            <tr id="deluxe3" class="trooms">
+              <td><span class="tableTopic"><a href="https://www.booking.com/hotel/lk/marino-beach-colombo.html?aid=7989935&label=lh_homepage&sid=6f734352ded7c5251e9f6f8012f9136f&sb=1&src=hotel&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Fhotel%2Flk%2Fmarino-beach-colombo.en-us.html%3Faid%3D7989935%26label%3Dlh_homepage%26sid%3D6f734352ded7c5251e9f6f8012f9136f%26all_sr_blocks%3D376535103_175111083_0_0_0%3Bcheckin%3D2023-08-08%3Bcheckout%3D2023-08-09%3Bdest_id%3D-2214877%3Bdest_type%3Dcity%3Bdist%3D0%3Bgroup_adults%3D2%3Bgroup_children%3D0%3Bhapos%3D1%3Bhighlighted_blocks%3D376535103_175111083_0_0_0%3Bhpos%3D1%3Bmatching_block_id%3D376535103_175111083_0_0_0%3Bno_rooms%3D1%3Breq_adults%3D2%3Breq_children%3D0%3Broom1%3DA%252CA%3Bsb_price_type%3Dtotal%3Bsr_order%3Dpopularity%3Bsr_pri_blocks%3D376535103_175111083_0_0_0__7500%3Bsrepoch%3D1689916866%3Bsrpvid%3D119925a0d6e205c2%3Btype%3Dtotal%3Bucfs%3D1%26%26&highlighted_hotels=3765351&hp_sbox=1&origin=hp&hp_avform=1&do_availability_check=on&stay_on_hp=1&checkin_year=2023&checkin_month=8&checkin_monthday=8&checkout_year=2023&checkout_month=8&checkout_monthday=9&group_adults=1&group_children=0&no_rooms=1&b_h4u_keep_filters=&from_sf=1#RD376535104">Deluxe Twin Room</a></span>
+               <br><span class="tableSub"> 2 twin beds This twin room has a bathrobe, air conditioning and tumble dryer.
+              </span><br><hr>
+              ✓Free toiletries ✓Bidet ✓Toilet ✓Bathtub or ✓shower ✓Towels ✓Linens ✓Cleaning products ✓Hypoallergenic Tile/Marble floor ✓Sitting area ✓TV 
+              ✓Refrigerator ✓Ironing facilities ✓Satellite channels ✓Tea/Coffee maker ✓Fan ✓Electric kettle ✓Cable channels ✓Wake-up service ✓Wardrobe or 
+              ✓closet ✓Entire unit located on ground floor ✓Drying rack for clothing ✓Toilet paper ✓Hand sanitizer
+              </td>
+               <td id="c3"><img src="Assets/person.png" alt="person" class="person"/><img src="Assets/person.png" alt="person" class="person"/><img src="Assets/person.png" alt="person" class="person"/></td>
+               <td><p><span id="d3roomPrice" class="rprice"></span>/ day</p>
+               <p class="tax">+<span id="d3handlingFee"></span> taxes and charges</p></td>
+               <td>Excellent breakfast included
+                Free cancellation
+                No prepayment needed – pay at the property</td>
+                <td>
+                  
+                  <select class="selectop"id="d3options"></select>
+                </td>
+            </tr>
+            <tr id="deluxe4" class="trooms">
+              <td><span class="tableTopic"><a href="https://www.booking.com/hotel/lk/marino-beach-colombo.html?aid=7989935&label=lh_homepage&sid=6f734352ded7c5251e9f6f8012f9136f&sb=1&src=hotel&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Fhotel%2Flk%2Fmarino-beach-colombo.en-us.html%3Faid%3D7989935%26label%3Dlh_homepage%26sid%3D6f734352ded7c5251e9f6f8012f9136f%26all_sr_blocks%3D376535103_175111083_0_0_0%3Bcheckin%3D2023-08-08%3Bcheckout%3D2023-08-09%3Bdest_id%3D-2214877%3Bdest_type%3Dcity%3Bdist%3D0%3Bgroup_adults%3D2%3Bgroup_children%3D0%3Bhapos%3D1%3Bhighlighted_blocks%3D376535103_175111083_0_0_0%3Bhpos%3D1%3Bmatching_block_id%3D376535103_175111083_0_0_0%3Bno_rooms%3D1%3Breq_adults%3D2%3Breq_children%3D0%3Broom1%3DA%252CA%3Bsb_price_type%3Dtotal%3Bsr_order%3Dpopularity%3Bsr_pri_blocks%3D376535103_175111083_0_0_0__7500%3Bsrepoch%3D1689916866%3Bsrpvid%3D119925a0d6e205c2%3Btype%3Dtotal%3Bucfs%3D1%26%26&highlighted_hotels=3765351&hp_sbox=1&origin=hp&hp_avform=1&do_availability_check=on&stay_on_hp=1&checkin_year=2023&checkin_month=8&checkin_monthday=8&checkout_year=2023&checkout_month=8&checkout_monthday=9&group_adults=1&group_children=0&no_rooms=1&b_h4u_keep_filters=&from_sf=1#RD376535115">Family Suite</a></span>
+               <br><span class="tableSub">
+               2 king beds 
+               Suite features 2 separate rooms and a living area. It features an ensuite lounge with mountain views.
+              </span><br><hr>
+              ✓Tile/Marble floor ✓Desk ✓Sitting area ✓Private entrance ✓TV ✓Slippers ✓Refrigerator ✓Telephone ✓Ironing facilities ✓Satellite channels ✓Radio 
+              ✓Hairdryer ✓DVD player ✓Towels/Sheets (extra fee) ✓Wake-up service/Alarm clock ✓Electric kettle ✓Cable channels ✓Wardrobe or ✓closet Detached
+              ✓Clothes rack ✓Toilet paper ✓Hand sanitizer ✓Single-room AC for guest accommodation
+            </td>
+               <td id="c4"><img src="Assets/person.png" alt="person" class="person"/><img src="Assets/person.png" alt="person" class="person"/><img src="Assets/person.png" alt="person" class="person"/><img src="Assets/person.png" alt="person" class="person"/></td>
+               <td><p><span id="d4roomPrice" class="rprice"></span>/ day</p>
+                <p class="tax">+<span id="d4handlingFee"></span> taxes and charges</p></td>
+               <td>Continental breakfast included
+                Free cancellation
+                No prepayment needed – pay at the property</td>
+                <td>
+                  
+                  <select class="selectop"id="d4options"></select>
+                  
+                </td>
+            </tr>
+    
+          </table>
+          </div>
+      </form>
+    </div>
+   
+<footer>
+  <h3>Thambapanni</h3>
+  <div>
+    <a href="editorpagefaizul.html"> Faizul</a> |
+    <a href="editorpageosh.html"> Oshada</a> |
+    <a href="bhanukaEditor.html"> Bhanuka</a> | 
+    <a href="editorpageRuhini.html"> Ruhini</a>
+  </div>
+  © Copyright 2023 Design by Oshada Perera
+</footer>
+    
+  
+      </body>
+      </html>

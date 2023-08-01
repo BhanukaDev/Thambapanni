@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap">
+    <script src="src/reserve.js" defer></script>
+    <link rel="stylesheet" href="styles/reserve.css">
+    <link rel="stylesheet" type="text/css" href="styles/headnfoot.css" />
+    <title>Hotel Reservation</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <div class="logo">
+          <a href="mainpage.html">
+            <img
+              id="logoimg"
+              src="Assets/logoBlack.png"
+              alt=""
+              height="50"
+              alt="logo"
+          /></a>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="gallery.html" class="active">Gallery </a>
+            </li>
+            <li>
+              <a href="welcomeToStore.html">Store </a>
+            </li>
+            <li>
+              <a href="">Quiz</a>
+            </li>
+            <li>
+              <a href="">Discover</a>
+            </li>
+            <li>
+              <a href="comment_page.html">Say, hi </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-right">
+        <div class="login-signup">
+          <a href="">Login</a> or <a href="signup_page.html">Signup</a>
+        </div>
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </header>
+    
+    <div class="container" id="con">
+      <h2>Hotel Reservation</h2>
+          <p>Destination: <span id="destinationName" class="answers"></span></p>
+          <p>Package: <span id="tag" class="answers"></span></p>
+          <p>Check-in Date: <span id="check_in" class="answers"></span></p>
+          <p>Check-out Date:<span id="check_out" class="answers"></span></p>
+          <p>No. of days: <span id="Totdays" class="answers"></span></p>
+          <p>No of rooms: <span id="totrooms" class="answers"></span></p>
+          <div class="rooms">
+          <p>Room Type: 
+            <span id="room1Details" class="answers"></span>
+            <span id="room2Details"class="answers"></span>
+            <span id="room3Details" class="answers"></span>
+            <span id="room4Details" class="answers"></span></div></p>
+          <p>No of adults: <span id="adult_no" class="answers"></p>
+          <p>No of children: <span id="children_no" class="answers"></p>
+          <p>Price (rooms): <span id="lkr">LKR </span> <span id="final_tot" class="answers"></p>
+          <p>Tax and charges: <span id="lkr">LKR </span><span id="final_hand"class="answers"></p>
+          <p>Total <span id="tc">(+ tax and charges) </span>: <span id="lkr">LKR </span><span id="fcost" class="answers"></p>
+  
+        
+        <div class="back_done_buttons">
+          <a href= "hotel_review.html" (-1); Location.reload ()” > <button id="Back">Back</button></a>
+          <button id="proceed" onclick="unHide('c1')">Proceed</button>
+      </div>    
+      </div>
+
+      <div class="container1" id="c1" style="display: none;">
+        <h2 class="payment">Payment Details</h2>
+        <form id="reserveForm" action="/process_payment" method="post">
+          
+        <label for="card_name">Cardholder's Name</label>
+        <input type="text" id="card_name" name="card_name" placeholder="Enter cardholder's name" required>
+        <div class="error" id="cardNameError"  style="display: none;">Please enter the card holders' name.</div>
+
+    
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" placeholder="Enter your address" required>
+          <div class="error" id="addressError"  style="display: none;">Please enter your address.</div>
+           
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+          <div class="error" id="emailError"  style="display: none;">Please enter your email address. ex: Saman@abc.com</div>
+    
+          <label for="card_number">Card Number</label>
+          <input type="text" id="card_number" name="card_number" placeholder="Enter your card number" pattern="[0-9]{16}" maxlength="16" minlength="16" required>
+          <div class="error" id="cardNumberError"  style="display: none;">Please enter your 16 digit card number.</div>
+  
+          <label for="expiry_date">Card Expiry Date</label>
+          <input type="month" id="expiry_date" name="expiry_date" placeholder="MM/YY" required>
+          <div class="error" id="cardExpiryError"  style="display: none;">Please enter your cards' expiry date.</div>
+
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" pattern="[0-9]{3}" maxlength="3" minlength="3" required>
+          <div class="error" id="cvvError"  style="display: none;">Please enter your 3 digit cvv.</div>
+    
+          <label for="card_type">Card Type</label>
+          <select id="card_type" name="card_type" required>
+            <option value="" disabled selected>Select card type</option>
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="amex">American Express</option>
+          </select>
+          <div class="error" id="cardTypeError"  style="display: none;">Please select your card type.</div>
+          <input type="submit" id="submitBtn" value="Submit Payment">
+        </form>
+      </div>
+       <!-- Popup Message -->
+<div id="popup" class="popup" style="display:none;">
+  <div class="popup-content">
+   <a href=""> <span class="close-btn">&times;</span></a>
+    <img id="tick" src="Assets/tick.png" alt="tick">
+    <h2 id="booked">Congratulations!</h2>
+    <p id="message">You have successfully booked the hotel.</p>
+    <p id="thank">Thank you for choosing Thambapanni. Have a nice day!</p>
+  </div>
+</div>
+
+<footer>
+  <h3>Thambapanni</h3>
+  <div>
+    <a href="editorpagefaizul.html"> Faizul</a> |
+    <a href="editorpageosh.html"> Oshada</a> |
+    <a href="bhanukaEditor.html"> Bhanuka</a> | 
+    <a href="editorpageRuhini.html"> Ruhini</a>
+  </div>
+  © Copyright 2023 Design by Oshada Perera
+</footer>
+
+  </body>
+</html>

@@ -1,0 +1,284 @@
+body {
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin:10px;
+    padding: 0px;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+h1 {
+    margin: 100px 20px;
+    font-size: 70px;
+    font-family: 'Courier New', monospace;
+}
+
+.search-bar-container{
+    column-gap:1rem;
+    row-gap:1rem;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.search-bar input[type="text"] {
+    flex: 1;
+    padding: 17px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px;
+    background: transparent;
+}
+
+.search-bar button {
+    padding: 17px 20px;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px 5px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.search-bar button:hover {
+    opacity: 0.8;
+}
+
+.search-bar input:hover {
+    opacity: 0.8;
+}
+
+/* Other styles from your previous CSS */
+.button-container {
+    position:sticky;
+    top:0px;
+    z-index: 0;
+    display:block;
+    flex-wrap:wrap;
+    justify-content: center;
+    max-width: 2000px;
+    margin: 0px;;
+    padding: 0px 100px;
+    column-gap:0rem;
+    row-gap:0px;
+    
+}
+.button-container{
+    display:flex;
+}
+
+
+.nav-button {
+    flex: 1 1 1rem;
+    display: flex;
+    margin: 50px;
+    padding: 100px ;
+    width:200px;
+    height: 250px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size:30px;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 8px #3eab43;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+/* Add animation styles on hover */
+.nav-button:hover {
+    background-color: #5ba461;
+    transform: scale(1.01); /* Add scaling effect on hover */
+    box-shadow: 1 10px rgb(101, 122, 228); /* Increase the shadow on hover */
+}
+
+/* Add animation styles on active state */
+.nav-button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 2px #757171;
+    transform: translateY(3px);
+}
+
+
+
+
+h2 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 24px;
+}
+#logoimg{
+    width: auto;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "ubuntu";
+}
+
+img {
+    width: 100%;
+}
+
+/* Header styles */
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background: #000000;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Styles for the header-left section */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left .logo {
+    width: 140px;
+}
+
+.header-left nav {
+    margin-left: 50px;
+}
+
+.header-left nav ul {
+    display: flex;
+}
+
+header nav ul li a {
+    display: block;
+    color: #cfd9e0;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: 0.2s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #fff;
+}
+
+header .login-signup {
+    display:block;
+}
+
+/* Styles for the header-right section */
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.login-signup {
+    color: #cfd9e0;
+    font-weight: bold;
+}
+
+.login-signup a {
+    display: inline-block;
+    color: #0b2239;
+    background: #4ad295;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+.header-right .hamburger {
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.header-right .hamburger div {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #fff;
+}
+
+/* Media query for responsiveness */
+@media only screen and (max-width: 1000px) {
+    header {
+        padding: 0 20px;
+    }
+    .header-right .hamburger {
+        display: block;
+    }
+    .header-left nav {
+        margin: 0;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        background-color: #0b2239;
+        padding: 30px;
+        transition: 0.3s;
+        text-align: center;
+        z-index: -1;
+    }
+    .header-left.active nav {
+        top: 70px;
+        position: fixed;
+    }
+    .header-left nav ul {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header .login-signup {
+        display: block;
+        margin-top: 20px;
+    }
+    .header-right .login-signup {
+        display: non;
+    }
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.foothead{
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+}

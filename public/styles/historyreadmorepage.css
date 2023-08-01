@@ -1,0 +1,113 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    margin-top: 60px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Styling for the first content section */
+.content:nth-of-type(1) {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the second content section */
+.content:nth-of-type(2) {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for headings */
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Styling for links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for containers */
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles for the container */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+/* Additional styles for the header */
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Additional styles for the main content */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Additional styles for the subheadings */
+h3 {
+    font-size: 20px;
+}
+
+/* Additional styles for paragraphs */
+p {
+    font-size: 16px;
+}
+
+/* Additional styles for the first content section */
+.content:nth-of-type(1) h2 {
+    color: #007bff;
+}
+
+/* Additional styles for the second content section */
+.content:nth-of-type(2) h2 {
+    color: #4ad295;
+}

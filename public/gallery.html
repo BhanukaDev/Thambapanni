@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belleza&family=Crimson+Text&family=Heebo&family=Josefin+Sans:wght@300&family=Lilita+One&family=Montserrat:wght@200;300&family=Poppins&family=Raleway&family=Roboto&family=Rock+Salt&display=swap"
+      rel="stylesheet" />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles/gallery.css" />
+    <link rel="stylesheet" href="styles/showInfo.css" />
+    <link rel="stylesheet" href="styles/sitemap.css" />
+    <link rel="stylesheet" type="text/css" href="styles/headnfoot.css" />
+
+    <title>Gallery</title>
+    <script src="src\gallery.js" defer></script>
+    <script src="src\theme.js" defer></script>
+    <script src="src\sitemap.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <div class="logo">
+          <a href="mainpage.html">
+            <img
+              id="logoimg"
+              src="Assets/logoBlack.png"
+              alt=""
+              height="50"
+              alt="logo"
+          /></a>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="gallery.html" class="active">Gallery </a>
+            </li>
+            <li>
+              <a href="welcomeToStore.html">Store </a>
+            </li>
+            <li>
+              <a href="">Quiz</a>
+            </li>
+            <li>
+              <a href="">Discover</a>
+            </li>
+            <li>
+              <a href="comment_page.html">Say, hi </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-right">
+        <div class="login-signup">
+          <a href="">Login</a> or <a href="signup_page.html">Signup</a>
+        </div>
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </header>
+
+    <div id="galleryPage">
+      <div class="heading">
+        <h1 id="visualVoyage">Visual Voyage</h1>
+        <br />
+        <h4>Unveiling Thambapanni</h4>
+        <div class="themecontainer">
+          <i class="fa-solid fa-palette fa-bounce" style="color: #030303"></i>
+          <div id="forest" class="themeSelector" onclick="changeTheme(0)"></div>
+          <div id="ocean" class="themeSelector" onclick="changeTheme(1)"></div>
+          <div id="sunny" class="themeSelector" onclick="changeTheme(2)"></div>
+        </div>
+      </div>
+      <div id="imagescontainer">
+        <div
+          class="mimage tall"
+          style="
+            background-image: url('https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/60eacb150207033.Y3JvcCw1MTEzLDQwMDAsNDQzLDA.jpg');
+            background-size: cover;
+            background-position: center;
+          "
+          data-title="Sigiriya"
+          data-description="Nestled in the heart of Sri Lanka, Sigiriya is an enchanting UNESCO World Heritage site that leaves visitors 
+          awe-inspired. Towering high, the iconic Lion Rock stands as a testament to ancient ingenuity and artistry. As you ascend its majestic 
+          staircase, you'll encounter mesmerizing frescoes, depicting heavenly nymphs that have stood the test of time. Reaching the summit,
+           an expansive panorama unfolds, offering a captivating vista of lush greenery and distant mountains. Wander through the remarkable
+            water gardens and marvel at the engineering marvels that allowed the ancient civilization to flourish in this rock fortress.
+             Sigiriya's historical significance, natural beauty, and architectural brilliance make it an unforgettable destination for history 
+             buffs and nature enthusiasts alike. Whether you're captivated by the legends surrounding this ancient rock or simply seeking
+              an escape into the past, Sigiriya promises an unforgettable journey back in time."
+          data-url="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/60eacb150207033.Y3JvcCw1MTEzLDQwMDAsNDQzLDA.jpg"
+          onclick="showInfo(this)"></div>
+        <div
+          class="mimage wide"
+          style="
+            background-image: url('https://surf-camp-arugam-bay-arugam-bay.booked.net/data/Photos/OriginalPhoto/9891/989181/989181193/Surf-Yoga-Arugam-Bay-Hotel-Exterior.JPEG');
+            background-size: cover;
+            background-position: center;
+          "
+          data-title="Arugam Bay"
+          data-description="Sri Lanka's hidden gem for surfers and nature lovers alike! Nestled on the country's southeastern coast, 
+          Arugam Bay boasts pristine beaches with crystal-clear waters, perfect for riding the waves or basking in the sun. 
+          Explore the lush mangrove forests, encounter exotic wildlife, and immerse yourself in the laid-back beach culture.
+           With warm hospitality, mouthwatering seafood, and stunning sunsets, Arugam Bay promises an unforgettable tropical paradise experience. 
+           Come and discover the magic of this enchanting coastal haven."
+          data-url="https://surf-camp-arugam-bay-arugam-bay.booked.net/data/Photos/OriginalPhoto/9891/989181/989181193/Surf-Yoga-Arugam-Bay-Hotel-Exterior.JPEG"
+          onclick="showInfo(this)"></div>
+        <div
+          class="mimage big"
+          style="
+            background-image: url('https://assets.traveltriangle.com/blog/wp-content/uploads/2018/05/611.jpg');
+            background-size: cover;
+            background-position: center;
+          "
+          data-title="Ella"
+          data-description="Nestled amid the emerald hills of Sri Lanka, Ella is a captivating paradise that bewitches every traveler. 
+          With its picturesque landscapes and cool, refreshing climate, Ella offers a respite from the bustling world. The iconic Nine Arch Bridge,
+           a marvel of engineering, stands gracefully amidst the lush tea plantations, beckoning you to witness the old-world charm of passing trains.
+            Hike up to the famous Ella Rock to catch the breathtaking sunrise, illuminating the valley below with golden hues. Explore the cascading beauty of Ravana Falls,
+             where the waters dance joyously against the rocks. Ella's tranquil ambiance, delightful eateries, and warm hospitality create an enchanting experience, 
+             leaving you with cherished memories of this charming hill station. Whether you're a nature enthusiast, a solo traveler, or a couple seeking romance,
+              Ella promises an unforgettable journey filled with beauty and serenity."
+          data-url="https://assets.traveltriangle.com/blog/wp-content/uploads/2018/05/611.jpg"
+          onclick="showInfo(this)"></div>
+
+        <div
+          class="mimage tall"
+          style="
+            background-image: url('https://digitaltravelcouple.com/wp-content/uploads/2019/12/Diyaluma-falls-sri-lanka-drone-top.jpg?ezimgfmt=rs:767x479/rscb19/ng:webp/ngcb19');
+            background-size: cover;
+            background-position: center;
+          "
+          data-title="Diyaluma Falls"
+          data-description="Diyaluma Fall, a heavenly cascade in Sri Lanka, unveils a mesmerizing spectacle of nature's grandeur.
+           As the water gracefully tumbles down the rocky cliffs, it creates a symphony of mist and melody that captures the hearts of
+            all who witness its beauty. The tallest waterfall on the island, Diyaluma invites adventurers to embark on an exhilarating
+             trek to its summit, where the panoramic vistas of lush valleys and distant horizons leave you in awe. The thrill of bathing 
+             in its crystal-clear pool, surrounded by lush vegetation, is a blissful escape from the world's hustle. With its pristine
+              charm and enchanting atmosphere, Diyaluma Fall stands as a testament to the natural wonders that Sri Lanka has to offer,
+               making it a must-visit destination for nature enthusiasts and wanderers seeking solace."
+          data-url="https://digitaltravelcouple.com/wp-content/uploads/2019/12/Diyaluma-falls-sri-lanka-drone-top.jpg?ezimgfmt=rs:767x479/rscb19/ng:webp/ngcb19"
+          onclick="showInfo(this)"></div>
+        <div
+          class="mimage"
+          style="
+            background-image: url('https://www.thesrilankatravelblog.com/wp-content/uploads/2022/09/a-tourists-guide-to-jaffna-sri-lanka-header.jpg');
+            background-size: cover;
+            background-position: center;
+          "
+          data-title="Jaffna"
+          data-description="Jaffna, a captivating city in Sri Lanka, beckons travelers with its rich cultural heritage and captivating landscapes.
+           Steeped in history, this northern gem boasts ancient temples, historical ruins, and vibrant markets that offer a glimpse into its
+            glorious past. The iconic Jaffna Fort, standing tall amidst lush greenery, echoes tales of a bygone era. Delight in the
+             tantalizing aroma of traditional Jaffna cuisine, renowned for its delectable seafood and spicy flavors.
+              The vibrant streets come alive with colorful festivals and warm hospitality, inviting visitors to immerse themselves in the
+               local culture. As the sun sets over the picturesque coastline, casting a golden glow over the palm-fringed beaches,
+                the serene beauty of Jaffna captivates every soul. Whether exploring its historical wonders or embracing the warmth
+                 of its people, Jaffna promises an unforgettable journey through time and culture."
+          data-url="https://www.thesrilankatravelblog.com/wp-content/uploads/2022/09/a-tourists-guide-to-jaffna-sri-lanka-header.jpg"
+          onclick="showInfo(this)"></div>
+        <div
+          class="mimage big"
+          style="
+            background-image: url('https://e0.pxfuel.com/wallpapers/382/976/desktop-wallpaper-wijesinghetours-destination-sri-lanka-elephant.jpg');
+            background-size: cover;
+            background-position: center;
+          "
+          data-title="Yala"
+          data-description="Nestled in the heart of Sri Lanka's wildlife wonders, Yala National Park stands as a breathtaking sanctuary
+           for nature enthusiasts. This enchanting paradise entices travelers with its diverse landscapes, ranging from dense jungles to
+            vast grasslands and shimmering lagoons. Embark on an enthralling safari adventure, where encounters with majestic elephants,
+             elusive leopards, and an array of vibrant birdlife leave you in awe. The air resonates with the symphony of wildlife,
+              echoing the untamed spirit of the wilderness. As the golden sun dips below the horizon, painting the sky in hues of orange
+               and pink, the magic of Yala unfolds. Its untamed beauty and harmonious blend of nature's wonders create an unforgettable
+                experience, etching memories that linger long after your journey through this captivating realm."
+          data-url="https://e0.pxfuel.com/wallpapers/382/976/desktop-wallpaper-wijesinghetours-destination-sri-lanka-elephant.jpg"
+          onclick="showInfo(this)"></div>
+        <div
+          class="mimage tall"
+          style="
+            background-image: url('https://agbrief.com/wp-content/uploads/2022/11/wp6830758-lotus-tower-wallpapers-1.jpg');
+            background-size: cover;
+            background-position: center;
+          "
+          data-title="Colombo"
+          data-description="Dynamic and vibrant, Colombo, the capital city of Sri Lanka, beckons travelers with its captivating blend of
+           old-world charm and modern allure. Embrace the hustle and bustle of the bustling streets, where ancient colonial architecture 
+           gracefully stands amidst sleek skyscrapers. The city's kaleidoscope of sights, sounds, and flavors creates an intoxicating
+            atmosphere that tantalizes the senses. Explore the bustling markets, where the aroma of exotic spices mingles with the laughter
+             of friendly vendors. Indulge in the tantalizing culinary delights, from savory street food to delectable seafood feasts.
+              Unwind in lush green parks or take a leisurely stroll along the glistening waterfront, where the Indian Ocean meets the urban
+               landscape. Colombo's rich history, diverse culture, and warm hospitality welcome you with open arms, ensuring an unforgettable
+                experience that lingers in your heart long after your departure."
+          data-url="https://agbrief.com/wp-content/uploads/2022/11/wp6830758-lotus-tower-wallpapers-1.jpg"
+          onclick="showInfo(this)"></div>
+
+        <div
+          class="mimage"
+          style="
+            background-image: url('https://negombotourservice.com/wp-content/uploads/2020/06/galle02.jpg');
+            background-size: cover;
+            background-position: center;
+          "
+          data-title="Galle"
+          data-description="Galle, a coastal gem in Sri Lanka, beckons travelers with its timeless charm and rich history. Nestled within ancient
+           fortifications, this picturesque town boasts cobblestone streets, colonial-era buildings, and inviting cafes. Wander through the 
+           vibrant markets where the aroma of exotic spices fills the air, and traditional craftsmanship is on full display. 
+           Galle's pristine beaches offer a serene escape, inviting you to unwind amidst turquoise waters and golden sands. The iconic Galle Fort
+            stands as a testament to the town's fascinating past, with its imposing walls and breathtaking views of the Indian Ocean.
+             Explore the narrow alleys, discovering boutique shops, art galleries, and delightful eateries serving delectable local cuisine.
+              As the sun sets, the town comes alive with a magical ambiance, as flickering lanterns illuminate the streets, casting a romantic
+               glow. With its blend of history, culture, and natural beauty, Galle is an enchanting destination that captures the hearts of all
+                who venture within its walls."
+          data-url="https://negombotourservice.com/wp-content/uploads/2020/06/galle02.jpg"
+          onclick="showInfo(this)"></div>
+        <div
+          class="mimage big"
+          style="
+            background-image: url('https://deih43ym53wif.cloudfront.net/temple-tooth-kandy-sri-lanka-shutterstock_1037797372_24beb3388c.jpeg');
+            background-size: cover;
+            background-position: center;
+          "
+          data-title="Kandy"
+          data-description="Nestled amidst lush green hills, Kandy is a jewel in the heart of Sri Lanka. This cultural capital exudes a
+           captivating charm, drawing visitors with its blend of history, spirituality, and natural beauty. The sacred Temple of the Tooth,
+            a revered UNESCO World Heritage site, stands as a symbol of ancient traditions and devout spirituality. Immerse yourself in the
+             mesmerizing Kandyan dance performances, where vibrant costumes and rhythmic beats tell tales of folklore and heritage.
+              As you stroll around the serene Kandy Lake, surrounded by serene gardens, you'll feel the tranquility seep into your soul.
+               The city's refreshing climate offers a welcome respite from the tropical heat, making it an ideal escape to unwind.
+                Kandy's lush botanical gardens showcase a mesmerizing collection of flora, inviting you to bask in the colors and scents of 
+                nature. With its rich heritage, picturesque landscapes, and warm hospitality, Kandy weaves a magical tapestry that lingers
+                 in the hearts of travelers long after they depart."
+          data-url="https://deih43ym53wif.cloudfront.net/temple-tooth-kandy-sri-lanka-shutterstock_1037797372_24beb3388c.jpeg"
+          onclick="showInfo(this)"></div>
+        <div
+          class="mimage tall"
+          style="
+            background-image: url('https://www.ccf.gov.lk/wp-content/uploads/2022/10/27251920438_a97a711b1c_b.jpg');
+            background-size: cover;
+            background-position: center;
+          "
+          data-title="Banbarakandha Waterfall"
+          data-description="Tucked away in the breathtaking hill country of Sri Lanka, the Bambarakanda Waterfall stands tall and proud as the
+           highest waterfall on the island. Cascading from a staggering height, its ethereal beauty captivates all who lay eyes upon it.
+            Surrounded by misty mountains and lush greenery, reaching this natural wonder involves a thrilling trek through scenic landscapes.
+             The sheer power of the falling water creates a soothing symphony that echoes through the valley, evoking a sense of wonder and
+              tranquility. Adventurous souls can take a refreshing dip in the cool waters at the base, an invigorating reward for their journey.
+               As the sunlight dances on the glistening droplets, a sense of enchantment fills the air, making Bambarakanda a must-visit
+                destination for nature enthusiasts and travelers seeking solace in the embrace of Sri Lanka's natural splendor."
+          data-url="https://www.ccf.gov.lk/wp-content/uploads/2022/10/27251920438_a97a711b1c_b.jpg"
+          onclick="showInfo(this)"></div>
+        <div
+          class="mimage wide"
+          style="
+            background-image: url('https://digitaltravelcouple.com/wp-content/uploads/2020/01/hikkaduwa-beach-drone-1.jpg');
+            background-size: cover;
+            background-position: center;
+          "
+          data-title="Hikkaduwa"
+          data-description=" Nestled along the southwestern coast of Sri Lanka, Hikkaduwa beckons travelers with its alluring blend of vibrant
+           beaches and a laid-back tropical vibe. This coastal haven is renowned for its pristine golden sands that stretch as far as the eye 
+           can see, inviting sun-seekers and surf enthusiasts alike. Hikkaduwa's crystal-clear waters teem with colorful coral reefs,
+            making it a paradise for snorkelers and scuba divers eager to explore the mesmerizing underwater world. The coastal town comes alive
+             with a lively beachfront atmosphere, where beach bars, seafood shacks, and bustling markets create a delightful fusion of flavors
+              and culture. As the sun dips below the horizon, the shoreline transforms into a magical spectacle of vibrant hues, 
+              casting a romantic spell on all who witness it. With warm hospitality, thrilling water sports, and a thriving nightlife scene,
+               Hikkaduwa has etched its place as a sought-after destination where relaxation, adventure, and pure bliss converge into an
+                unforgettable tropical escape."
+          data-url="https://digitaltravelcouple.com/wp-content/uploads/2020/01/hikkaduwa-beach-drone-1.jpg"
+          onclick="showInfo(this)"></div>
+        <div
+          class="mimage"
+          style="
+            background-image: url('https://www.atlasandboots.com/wp-content/uploads/2017/04/climbing-adams-peak-cloud-blanket.jpg');
+            background-size: cover;
+            background-position: center;
+          "
+          data-title="Adams Peak"
+          data-description="Rising majestically in the heart of Sri Lanka, Adams Peak, also known as Sri Pada, is a captivating natural wonder
+           that lures pilgrims and nature enthusiasts alike. As the first rays of dawn break over the horizon, the sacred mountain becomes 
+           a pilgrimage site, drawing devotees from various faiths to ascend its revered summit. The highlight of this awe-inspiring journey
+            is the sacred footprint at the peak, believed to belong to Lord Buddha, Lord Shiva, or Adam, depending on one's religious beliefs. 
+            The trek to the summit is a spiritual and physical experience, where the beauty of the surrounding landscapes unfolds with each step
+            , revealing mist-clad valleys, lush tea plantations, and distant hills. The journey culminates in an ethereal sunrise, 
+            where the panorama of hues ignites a sense of serenity and wonder. Beyond its spiritual significance, Adams Peak captivates 
+            adventure seekers with its challenging trails and an opportunity to commune with nature in its purest form. Whether for spiritual 
+            fulfillment or to witness nature's grandeur, Adams Peak leaves an indelible mark on the souls of those who venture to its summit,
+             offering a glimpse into the profound beauty and spiritual essence of Sri Lanka."
+          data-url="https://www.atlasandboots.com/wp-content/uploads/2017/04/climbing-adams-peak-cloud-blanket.jpg"
+          onclick="showInfo(this)"></div>
+        <div
+          class="mimage wide"
+          style="
+            background-image: url('https://www.kumananationalpark.com/images/slider/09.jpg');
+            background-size: cover;
+            background-position: center;
+          "
+          data-title="Kumana National Park"
+          data-description="Nestled in the eastern corner of Sri Lanka, Kumana National Park stands as a pristine haven of biodiversity and
+           untouched wilderness. Enchanting and untamed, the park beckons wildlife enthusiasts and nature lovers to explore its lush landscapes
+            and diverse habitats. Renowned as a birdwatcher's paradise, Kumana is home to a plethora of avian species, including migratory birds
+             that grace its tranquil lagoons during the nesting season. The melodies of colorful feathered creatures harmonize with the whispers
+              of the wind, creating a symphony of nature's sounds. As you venture deeper into the park's verdant foliage, you might encounter 
+              majestic elephants, elusive leopards, and playful deer roaming freely in their natural habitat. The shimmering lakes,
+               interwoven waterways, and dense mangroves add to the park's mystical allure, offering a mesmerizing setting to immerse oneself
+                in the wonders of the wild. A safari through Kumana National Park is a journey of discovery, where the sheer beauty of the
+                 untamed world will leave you captivated and inspired, making it an unforgettable experience for those seeking an authentic
+                  encounter with Sri Lanka's extraordinary wildlife."
+          data-url="https://www.kumananationalpark.com/images/slider/09.jpg"
+          onclick="showInfo(this)"></div>
+        <div
+          class="mimage"
+          style="
+            background-image: url('https://d2r2v0jxjsbm0p.cloudfront.net/2019/03/Whale-and-dolphin-watching-1.jpg');
+            background-size: cover;
+            background-position: center;
+          "
+          data-title="Mirissa"
+          data-description="Nestled along the sun-kissed southern coast of Sri Lanka, Mirissa is a captivating coastal gem that beckons travelers
+           with its serene charm and sandy shores. This idyllic fishing village has gracefully embraced its transformation into a popular
+            beach destination, while retaining its authentic allure. Mirissa's pristine crescent-shaped beaches invite you to unwind and 
+            soak up the tropical bliss, where turquoise waters gently caress the golden sands. Adventure seekers can indulge in thrilling 
+            water sports, from surfing the rolling waves to exploring the vibrant marine life through snorkeling and scuba diving.
+             But perhaps the most enchanting aspect of Mirissa is its reputation as a prime location for whale and dolphin watching. 
+             Embark on a captivating ocean journey and witness these gentle giants gracefully gliding through the azure waters, 
+             creating a spectacle that will leave you in awe. As the sun sets over the horizon, Mirissa comes alive with a vibrant beachside
+              ambiance, offering a delightful array of beachfront restaurants serving mouthwatering seafood delicacies and refreshing cocktails.
+               Whether you seek relaxation or adventure, Mirissa's laid-back atmosphere and natural beauty promise an unforgettable escape,
+                making it a quintessential coastal haven for travelers seeking a slice of paradise in Sri Lanka."
+          data-url="https://d2r2v0jxjsbm0p.cloudfront.net/2019/03/Whale-and-dolphin-watching-1.jpg"
+          onclick="showInfo(this)"></div>
+      </div>
+    </div>
+
+    <!-- hidden popup -->
+    <div id="seemore" class="gbackdrop">
+      <div class="storeImage">
+        <img
+          id="zoomImage"
+          src="https://images.unsplash.com/photo-1517856497829-3047e3fffae1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80"
+          alt="photo" />
+        <button onclick="closeShowInfo()">
+          <i class="fa-solid fa-xmark" style="color: #0a0a0a"></i>
+        </button>
+        <div class="bottombar">
+          <h1 id="maintitle">YALA</h1>
+          <p id="shortdesc" onclick="showsidebar()">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            maiores ...See more
+          </p>
+        </div>
+        <div class="sidebar">
+          <h1 id="imgtitle">YALA</h1>
+          <p id="imgdesc">Lorem ipsum dolor,</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <h3>Thambapanni</h3>
+      <div>
+        <a href="editorpagefaizul.html"> Faizul</a> |
+        <a href="editorpageosh.html"> Oshada</a> |
+        <a href="bhanukaEditor.html"> Bhanuka</a> |
+        <a href="editorpageRuhini.html"> Ruhini</a>
+      </div>
+      © Copyright 2023 Design by Ruhini Hettiarachchi
+    </footer>
+  </body>
+</html>

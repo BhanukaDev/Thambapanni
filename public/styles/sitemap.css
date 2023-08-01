@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 500ms;
+}
+
+#sitemapcontainer {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+@keyframes updown {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+#mapbackdrp {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(128, 128, 128, 0.345);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+#forestMap {
+  display: none;
+  animation: updown 5s infinite;
+}
+
+.siteMap {
+  height: 90%;
+  position: fixed;
+  bottom: -5px;
+}
+
+#siteMapButton {
+  position: fixed;
+  bottom: 30px;
+  font-size: 35px;
+  border-radius: 40px;
+  padding: 10px 12.5px;
+  border: none;
+  left: 15px;
+  background-color: rgba(255, 255, 255, 0.663);
+  box-shadow: 0 0 15px #242422;
+  color: #2c2929e1;
+  backdrop-filter: blur(10px);
+}
+
+#siteMapButton:hover {
+  scale: 1.1;
+  transition: 450ms;
+}
+
+.sitemaptext {
+  position: fixed;
+  font-size: 50px;
+  color: rgba(13, 13, 13, 0.723);
+  font-family: "Roboto", sans-serif;
+  animation: updown 5s infinite;
+}
+
+.sitemaptext a {
+  text-decoration: none;
+}
+
+.sitemaptext a:hover {
+  transform: translateY(20px);
+}
+
+#sitemaptext .sitemap-text-container {
+  display: none;
+}
+
+.sitemaptext > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -99;
+}
+
+.sitemaptext h2 {
+  font-family: "Roboto", sans-serif;
+  color: #242422;
+}
+
+#homepagetxt {
+  left: 38px;
+  bottom: 10%;
+  border-radius: 9000px;
+  padding: 40px;
+
+  font-size: 40px;
+}
+
+#homepagetxt > img {
+  width: 260px;
+}
+
+#gallerytxt {
+  left: 584px;
+  bottom: 8%;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+}
+#gallerytxt > img {
+  width: 198px;
+}
+
+#shoptxt {
+  left: 330px;
+  bottom: 35%;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+}
+#shoptxt > img {
+  width: 200px;
+}
+
+#quiztxt {
+  left: 330px;
+  bottom: 61%;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+}
+
+#quiztxt > img {
+  width: 200px;
+}
+
+#abtustxt {
+  left: 85px;
+  bottom: 68%;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+}
+#abtustxt > img {
+  width: 200px;
+}
+
+#discovertxt {
+  left: 560px;
+  bottom: 49%;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+}
+#discovertxt > img {
+  width: 200px;
+}
+
+#culturetxt {
+  left: 622px;
+  bottom: 75%;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+}
+#culturetxt > img {
+  width: 125px;
+}
+
+#wildlifetxt {
+  left: 812px;
+  bottom: 77%;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+}
+#wildlifetxt > img {
+  width: 125px;
+}
+
+#cusinetxt {
+  left: 900px;
+  bottom: 65%;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+}
+#cusinetxt > img {
+  width: 125px;
+}
+
+#historytxt {
+  left: 816px;
+  bottom: 50%;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+}
+#historytxt > img {
+  width: 125px;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}

@@ -1,0 +1,233 @@
+/* Add your custom styles here */
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  header {
+    background-color: #007bff;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: justify;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  h1, h2 {
+    color: #007bff;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  section:last-child {
+    margin-bottom: 0;
+  }
+  
+  footer{
+    background-color: #333;
+    height: 60px;
+    width: 100%;
+    top: 100%;
+    margin-bottom: 0;
+    padding: 5px;
+
+  
+  
+  }
+   #rights{
+    text-align: center;
+    color: #fff;
+  }
+  #editor{
+    color: yellow;
+    text-align: center;
+    justify-content: center;
+    background-color: transparent;
+    margin-left: 46%;
+    border: none;
+    transform: all 1s;
+    font-size: 12pt;
+  }
+  #editor:hover{
+    transform:scale(1.01);
+    color: #ff0000;
+    font-size: 13pt;
+  
+  }
+  /* Styling for specific sections */
+  
+  #about h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Rock Salt', cursive;
+    color: black;
+  }
+  
+  #about p {
+    font-size: 18px;
+  }
+  
+  #traditions h2, #food h2, #dance h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #traditions p, #food p, #dance p {
+    font-size: 16px;
+  }
+  /* CSS for Slideshow */
+#slideshow {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .fade {
+    animation: fadeAnimation 3s ease-in-out infinite;
+  }
+  
+  @keyframes fadeAnimation {
+    0%, 100% { opacity: 0; }
+    20%, 80% { opacity: 1; }
+  }
+  
+  
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: #e7e6e6;
+  padding: 20px;
+  border-radius: 20px;
+  /* transform: translateX(-50%); */
+  margin-top: 60px;
+  /* margin-right: 100px; */
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  padding: 2rem 1rem;
+  background: #fff;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(20px);
+}
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #393934a9, #e3b13d);
+  z-index: 2;
+  transition: 0.5s all;
+  opacity: 0;
+}
+.card:hover:before {
+  opacity: 1;
+}
+.wrapper .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.card .info {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s all;
+}
+.card:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.card .info h1 {
+  margin: 0;
+}
+.card .info p {
+  letter-spacing: 1px;
+  font-size: 13px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.card .info .btn {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.card.info.btn:hover {
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}

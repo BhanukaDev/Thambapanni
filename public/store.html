@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/store.css">
+    <link rel="stylesheet" type="text/css" href="styles/headnfoot.css" />
+    <script src ="src/store.js" defer></script>
+    <title>Store</title>
+</head>
+<body background="Assets/bg1.png">
+  
+  <header>
+    <div class="header-left">
+      <div class="logo">
+        <a href="mainpage.html">
+          <img
+            id="logoimg"
+            src="Assets/logoBlack.png"
+            alt=""
+            height="50"
+            alt="logo"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="gallery.html" class="active">Gallery </a>
+          </li>
+          <li>
+            <a href="welcomeToStore.html">Store </a>
+          </li>
+          <li>
+            <a href="">Quiz</a>
+          </li>
+          <li>
+            <a href="">Discover</a>
+          </li>
+          <li>
+            <a href="comment_page.html">Say, hi </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-right">
+      <div class="login-signup">
+        <a href="">Login</a> or <a href="signup_page.html">Signup</a>
+      </div>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </header>
+  
+    <div class="heading" id="popularheading">
+        <h2>Popular</h2>
+    </div>
+    <div class="container1" id="1stcontainer">
+        <button class="pre-btn"><img src="Assets/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="Assets/arrow.png" alt=""></button>
+        <div class="tiles" id="wctl">
+            <img class="d_images" src="https://lh5.googleusercontent.com/p/AF1QipMoMsYZfVVg1gd3JtsLssgzhl5Njr1stQSomaQM=w253-h168-k-no" alt="Wild Coast Tented Lodge - Relais & Chateaux">
+            <p class="tag" id="couples">couples</p>
+            <h3 class="topic"> Wild Coast Tented Lodge - Relais & Chateaux</h3>
+            <hr>
+            <p class="description">5-star hotel  <img class="objects" src="Assets/wifi.png" alt="wifi"> Free Wifi  <br><img class="objects" id="loc" src="Assets/location.png" alt="location"> Wild Coast Tented Lodge Palatupana, Yala   <img class="objects" id="phone" src="Assets/phone.png" alt="phone"><a href="tel:0117745730"> 0117 745 730</a></p>
+            <p class="ratings">4.8<span class="star">&starf;&starf;&starf;&starf;&star;</span>(110)</p>
+             <p class="price">LKR 216,486 <span class="person"> /day</span> </p> <div class="hiddenprice">216486</div>
+           <a href="hotel_review.html?hotel_id=wctl " onclick="showHotelInformation(event, this)"> <button class="book_button" >Book Now</button></a>
+
+
+        </div>
+        <div class="tiles" id="opd">
+            <img class="d_images" src="https://lh5.googleusercontent.com/p/AF1QipPgdJERJyDBbP1myKGSrmPgvkwV6EI3vKT8uQ6H=w253-h168-k-no" alt="Occidental Paradise Dambulla">
+            <p class="tag" id="friends">Friends</p>
+            <h3 class="topic"> Occidental Paradise Dambulla</h3> 
+            <hr>
+            <p class="description"> 4-star hotel <img class="objects" src="Assets/breakfast.png" alt="breakfast"> Breakfast(&dollar;)<br><img class="objects" id="loc" src="Assets/location.png" alt="location"> Kubukkadanwala, Dambulla <img class="objects" id="phone" src="Assets/phone.png" alt="phone"><a href="tel:0812222861"> 0812 222 861</a></p>
+            <p class="ratings">4.5<span class="star">&starf;&starf;&starf;&starf;&star;</span>(103)</p>
+            <p class="price">LKR 8,524<span class="person"> /day</span></p><div class="hiddenprice">8524</div>
+           <a href="hotel_review.html?hotel_id=opd"onclick="showHotelInformation(event, this)"><button class="book_button">Book Now</button></a>
+
+
+        </div>
+        <div class="tiles"id="clh">
+            <img class="d_images" src="https://lh3.googleusercontent.com/p/AF1QipMBjDEX_3pZlvDZbw_rCLljxQ2Coalt8cJcsHMT=w296-h202-n-k-no-v1-rj" alt="Cinnamon lodge habarana">
+            <p class="tag" id="family">Family</p>
+            <h3 class="topic"> Cinnamon lodge Habarana</h3>
+            <hr>
+            <p class="description"> 5-star hotel  <img class="objects" src="Assets/wifi.png" alt="wifi"> Free Wifi  <br><img class="objects" id="loc" src="Assets/location.png" alt="location"> PO Habarana <img class="objects" id="phone" src="Assets/phone.png" alt="phone"><a href="tel:0662270011"> 0662 270 011</a></p>
+            <p class="ratings">4.6<span class="star">&starf;&starf;&starf;&starf;&star;</span>(114)</p>
+            <p class="price" value="26371">LKR 26,371<span class="person"> /day</span></p><div class="hiddenprice">26371</div>
+           <a href="hotel_review.html?hotel_id=clh"onclick="showHotelInformation(event, this)"><button class="book_button">Book Now</button></a>
+
+
+        </div>
+        <div class="tiles"id="jy">
+            <img class="d_images" src="https://lh3.googleusercontent.com/p/AF1QipMYaZDks7udkFt0K9p-Sa4ux0LQ0wF17OaXWUQi=w296-h202-n-k-no-v1-rj" alt="Jetwing Yala">
+            <p class="tag" id="friends">Friends</p>
+            <h3 class="topic"> Jetwing Yala</h3>
+            <hr>
+            <p class="description"> 4-star hotel <img class="objects" src="Assets/breakfast.png" alt="breakfast"> Breakfast<br><img class="objects" id="loc" src="Assets/location.png" alt="location"> Palatupana, Kirinda <img class="objects" id="phone" src="Assets/phone.png" alt="phone"><a href="tel:0474710710"> 0474 710 710</a></p>
+            <p class="ratings">4.6<span class="star">&starf;&starf;&starf;&starf;&star;</span>(97)</p>
+            <p class="price">LKR 71,160<span class="person"> /day</span></p><div class="hiddenprice">71160</div>
+           <a href="hotel_review.html?hotel_id=jy" onclick="showHotelInformation(event, this)"><button class="book_button">Book Now</button></a>
+
+
+        </div>
+        <div class="tiles"id="ers">
+            <img class="d_images" src="https://lh3.googleusercontent.com/p/AF1QipO-jTFaqfh6wRlIJQik3B7lCIvuTkLOqojiry1m=w296-h202-n-k-no-v1-rj" alt="Elephas Resort & Spa">
+            <p class="tag" id="couples">couples</p>
+            <h3 class="topic">Elephas Resort & Spa</h3> 
+            <hr>
+            <p class="description"> 4-star hotel <img class="objects" src="Assets/breakfast.png" alt="breakfast"> Breakfast(&dollar;)<br><img class="objects" id="loc" src="Assets/location.png" alt="location"> No-47/B, Audangawa, Kibissa, Sigiriya <img class="objects" id="phone" src="Assets/phone.png" alt="phone"><a href="tel:0771788487"> 077 178 8487</a></p>
+            <p class="ratings">4.2<span class="star">&starf;&starf;&starf;&starf;&star;</span>(98)</p>
+            <p class="price">LKR 15,506</p><div class="hiddenprice">15506</div>
+           <a href="hotel_review.html?hotel_id=ers" onclick="showHotelInformation(event, this)"><button class="book_button">Book Now</button></a>
+
+
+        </div>
+        <div class="tiles"id="af">
+            <img class="d_images" src="https://i.travelapi.com/lodging/13000000/12620000/12614800/12614798/20d6d982_z.jpg" alt="Amara Forest">
+            <p class="tag" id="family">Family</p>
+            <h3 class="topic"> Amara Forest</h3>
+            <hr>
+            <p class="description"> 4-star hotel <img class="objects" src="Assets/breakfast.png" alt="breakfast"> Breakfast(&dollar;)<br><img class="objects" id="loc" src="Assets/location.png" alt="location"> Indigaswewa, Sigiriya, Dambulla <img class="objects" id="phone" src="Assets/phone.png" alt="phone"><a href="tel:0812051404"> 0812 051 404</a></p>
+            <p class="ratings">4.4<span class="star">&starf;&starf;&starf;&starf;&star;</span>(105)</p> 
+            <p class="price">LKR 29,185<span class="person"> /day</span></p><div class="hiddenprice">29185</div>
+           <a href="hotel_review.html?hotel_id=af" onclick="showHotelInformation(event, this)"><button class="book_button">Book Now</button></a>
+
+
+        </div>
+    </div>
+
+
+    <div class="heading" id="familyheading">
+        <h2>Family</h2>
+    </div>
+    <div class="container1" id="2ndcontainer">
+        <button class="pre-btn" id="pb1"><img src="Assets/arrow.png" alt=""></button>
+        <button class="nxt-btn" id="nb1"><img src="Assets/arrow.png" alt=""></button>
+        <div class="tiles"id="abp">
+            <img class="d_images" src="https://lh3.googleusercontent.com/p/AF1QipM2La-IWOkaWkQ2Z9oluUhtDB-iUU-y6f-RoSIw=w296-h202-n-k-no-v1-rj" alt="Amaya Beach Passikudah">
+            <p class="tag" id="family">Family</p>
+            <h3 class="topic"> Amaya Beach Passikudah</h3>
+            <hr>
+            <p class="description"> 4-star hotel <img class="objects" src="Assets/breakfast.png" alt="breakfast"> Free Breakfast<br><img class="objects" id="loc" src="Assets/location.png" alt="location">Amaya Beach, Kalkudah<img class="objects" id="phone" src="Assets/phone.png" alt="phone"><a href="tel:0652050200"> 0652 050 200</a></p>
+            <p class="ratings">4.4<span class="star">&starf;&starf;&starf;&starf;&star;</span>(101)</p> 
+            <p class="price">LKR 48,642<span class="person"> /day</span></p><div class="hiddenprice">48642</div>
+           <a href="hotel_review.html?hotel_id=abp" onclick="showHotelInformation(event, this)"><button class="book_button">Book Now</button></a>
+
+
+        </div>
+        <div class="tiles"id="jb">
+            <img class="d_images" src="https://lh3.googleusercontent.com/p/AF1QipM8_ZqS8wTN0KgIM_HJ4aJZSy9WipTONrIoVl-r=w296-h202-n-k-no-v1-rj" alt="Jetwing blur">
+            <p class="tag" id="family">Family</p>                
+            <h3 class="topic"> Jetwing Blue</h3>
+            <hr>
+            <p class="description"> 5-star hotel <img class="objects" src="Assets/breakfast.png" alt="breakfast"> Breakfast<br><img class="objects" id="loc" src="Assets/location.png" alt="location"> 6RRR+MPF, Porutota Rd, Negombo <img class="objects" id="phone" src="Assets/phone.png" alt="phone"><a href="tel:0312279000">0312 279 000</a></p>
+            <p class="ratings">4.4<span class="star">&starf;&starf;&starf;&starf;&star;</span>(107)</p>
+            <p class="price">LKR 10,596<span class="person"> /day</span></p><div class="hiddenprice">10596</div>
+            <a href="hotel_review.html?hotel_id=jb" onclick="showHotelInformation(event, this)"><button class="book_button">Book Now</button></a>
+        </div>
+        <div class="tiles"id="est" >
+            <img class="d_images" src="https://th.bing.com/th/id/OIP.VJLJizIi17B7numRgOBcKwHaE8?pid=ImgDet&rs=1" alt="EKHO Safari Tissa">
+            <p class="tag" id="family">Family</p>
+            <h3 class="topic"> EKHO Safari Tissa</h3>
+            <hr>
+            <p class="description"> 4-star hotel <img class="objects" src="Assets/breakfast.png" alt="breakfast"> Breakfast(&dollar;)<br><img class="objects" id="loc" src="Assets/location.png" alt="location"> Tissamaharama - Kataragama Rd, Tissamaharama <img class="objects" id="phone" src="Assets/phone.png" alt="phone"><a href="tel:0772356185"> 077 235 6185</a></p>
+            <p class="ratings">4.0<span class="star">&starf;&starf;&starf;&starf;&star;</span>(89)</p>
+            <p class="price">LKR 18,748<span class="person"> /day</span></p><div class="hiddenprice">18748</div>
+           <a href="hotel_review.html?hotel_id=est" onclick="showHotelInformation(event, this)"><button class="book_button">Book Now</button></a>
+
+        </div>
+        <div class="tiles"id="af">
+            <img class="d_images" src="https://i.travelapi.com/lodging/13000000/12620000/12614800/12614798/20d6d982_z.jpg" alt="Amara Forest">
+            <p class="tag" id="family">Family</p>
+            <h3 class="topic"> Amara Forest</h3>
+            <hr>
+            <p class="description"> 4-star hotel <img class="objects" src="Assets/breakfast.png" alt="breakfast"> Breakfast(&dollar;)<br><img class="objects" id="loc" src="Assets/location.png" alt="location"> Indigaswewa, Sigiriya, Dambulla <img class="objects" id="phone" src="Assets/phone.png" alt="phone"><a href="tel:0812051404"> 0812 051 404</a></p>
+            <p class="ratings">4.4<span class="star">&starf;&starf;&starf;&starf;&star;</span>(105)</p> 
+            <p class="price">LKR 29,185<span class="person"> /day</span></p><div class="hiddenprice">29185</div>
+           <a href="hotel_review.html?hotel_id=af" onclick="showHotelInformation(event, this)"><button class="book_button">Book Now</button></a>
+
+
+        </div>
+        <div class="tiles"id="wgnr">
+            <img class="d_images" src="https://lh3.googleusercontent.com/p/AF1QipNSnNpDV8oN5zDI5o1_UrCm0TPRLybQic6rJvYW=w296-h202-n-k-no-v1-rj" alt="Wild Grass Nature Resort">
+            <p class="tag" id="family">Family</p>
+            <h3 class="topic">Wild Grass Nature Resort</h3>
+            <hr>
+            <p class="description"> 4-star hotel <img class="objects" src="Assets/wifi.png" alt="wifi"> Free Wifi  <br><img class="objects" id="loc" src="Assets/location.png" alt="location"> Main Road Kumbukkadanwala Sigiriya, Dambulla <img class="objects" id="phone" src="Assets/phone.png" alt="phone"><a href="tel:0771788487"> 077 178 8487</a></p>
+            <p class="ratings">4.6<span class="star">&starf;&starf;&starf;&starf;&star;</span>(108)</p>
+            <p class="price">LKR 78,049<span class="person"> /day</span></p><div class="hiddenprice">78049</div>
+           <a href="hotel_review.html?hotel_id=wgnr" onclick="showHotelInformation(event, this)"><button class="book_button">Book Now</button></a>
+
+
+        </div>
+        <div class="tiles"id="clh">
+            <img class="d_images" src="https://lh3.googleusercontent.com/p/AF1QipMBjDEX_3pZlvDZbw_rCLljxQ2Coalt8cJcsHMT=w296-h202-n-k-no-v1-rj" alt="Cinnamon lodge habarana">
+            <p class="tag" id="family">Family</p>
+            <h3 class="topic"> Cinnamon lodge Habarana</h3>
+            <hr>
+            <p class="description"> 5-star hotel  <img class="objects" src="Assets/wifi.png" alt="wifi"> Free Wifi  <br><img class="objects" id="loc" src="Assets/location.png" alt="location"> PO Habarana <img class="objects" id="phone" src="Assets/phone.png" alt="phone"><a href="tel:0662270011"> 0662 270 011</a></p>
+            <p class="ratings">4.6<span class="star">&starf;&starf;&starf;&starf;&star;</span>(114)</p>
+            <p class="price">LKR 26,371<span class="person"> /day</span></p><div class="hiddenprice">26371</div>
+           <a href="hotel_review.html?hotel_id=clh" onclick="showHotelInformation(event, this)"><button class="book_button">Book Now</button></a>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="heading" id="coupleheading">
+        <h2>Couples</h2>
+    </div>    
+    <div class="container1" id="container3rd" style="background-image: url(Assets/couple.jpg) opacity 0.6;">
+        <button class="pre-btn" id="pb2"><img src="Assets/arrow.png" alt=""></button>
+        <button class="nxt-btn" id="nb2"><img src="Assets/arrow.png" alt=""></button>
+        <div class="tiles"id="kr">
+            <img class="d_images" src="https://lh3.googleusercontent.com/p/AF1QipPlslfXiRwR2p5aKeAxRzzWjB1EAoAPhb3Elrxf=w296-h202-n-k-no-v1-rj" alt="Kings Ridge">
+            <p class="tag" id="couples">couples</p>
+            <h3 class="topic">Kings Ridge</h3>
+            <hr>
+            <p class="description"> 4-star hotel <img class="objects" src="Assets/wifi.png" alt="wifi"> Free Wifi  <br><img class="objects" id="loc" src="Assets/location.png" alt="location"> 113 Rajapihilla Mawatha, Kandy <img class="objects" id="phone" src="Assets/phone.png" alt="phone"><a href="tel:0812051404"> 0812 051 404</a></p>
+            <p class="ratings">4.6<span class="star">&starf;&starf;&starf;&starf;&star;</span>(98)</p> 
+            <p class="price">LKR 8,902<span class="person"> /day</span></p><div class="hiddenprice">8902</div>
+           <a href="hotel_review.html?hotel_id=kr" onclick="showHotelInformation(event, this)"><button class="book_button">Book Now</button></a>
+
+
+        </div>
+        <div class="tiles"id="wctl">
+            <img class="d_images" src="https://lh5.googleusercontent.com/p/AF1QipMoMsYZfVVg1gd3JtsLssgzhl5Njr1stQSomaQM=w253-h168-k-no" alt="Wild Coast Tented Lodge - Relais & Chateaux">
+            <p class="tag" id="couples">couples</p>
+            <h3 class="topic"> Wild Coast Tented Lodge - Relais & Chateaux</h3>
+            <hr>
+            <p class="description">5-star hotel  <img class="objects" src="Assets/wifi.png" alt="wifi"> Free Wifi  <br><img class="objects" id="loc" src="Assets/location.png" alt="location"> Wild Coast Tented Lodge Palatupana, Yala   <img class="objects" id="phone" src="Assets/phone.png" alt="phone"><a href="tel:0117745730"> 0117 745 730</a></p>
+            <p class="ratings">4.8<span class="star">&starf;&starf;&starf;&starf;&star;</span>(110)</p>
+             <p class="price">LKR 216,486 <span class="person"> /day</span> </p><div class="hiddenprice">216486</div>
+           <a href="hotel_review.html?hotel_id=wctl" onclick="showHotelInformation(event, this)"><button class="book_button">Book Now</button></a>
+
+
+        </div>
+        <div class="tiles"id="ers">
+            <img class="d_images" src="https://lh3.googleusercontent.com/p/AF1QipO-jTFaqfh6wRlIJQik3B7lCIvuTkLOqojiry1m=w296-h202-n-k-no-v1-rj" alt="Elephas Resort & Spa">
+            <p class="tag" id="couples">couples</p>
+            <h3 class="topic">Elephas Resort & Spa</h3> 
+            <hr>
+            <p class="description"> 4-star hotel <img class="objects" src="Assets/breakfast.png" alt="breakfast"> Breakfast(&dollar;)<br><img class="objects" id="loc" src="Assets/location.png" alt="location"> No-47/B, Audangawa, Kibissa, Sigiriya <img class="objects" id="phone" src="Assets/phone.png" alt="phone"><a href="tel:0771788487"> 077 178 8487</a></p>
+            <p class="ratings">4.2<span class="star">&starf;&starf;&starf;&starf;&star;</span>(98)</p>
+            <p class="price">LKR 15,506<span class="person"> /day</span></p><div class="hiddenprice">15506</div>
+           <a href="hotel_review.html?hotel_id=ers" onclick="showHotelInformation(event, this)"><button class="book_button">Book Now</button></a>
+
+
+        </div>
+        <div class="tiles"id="sch">
+            <img class="d_images" src="https://ak-d.tripcdn.com/images/200r0l000000cr0qn3AAA_R_960_660_R5_D.jpg" alt="Sevana City Hotel">
+            <p class="tag" id="couples">couples</p>
+            <h3 class="topic"> Sevana City Hotel</h3> 
+            <hr>
+            <p class="description"> 3-star hotel <img class="objects" src="Assets/wifi.png" alt="wifi"> Free Wifi  <br><img class="objects" id="loc" src="Assets/location.png" alt="location"> 84 Peradeniya Rd, Kandy <img class="objects" id="phone" src="Assets/phone.png" alt="phone"><a href="tel:0812222861"> 0812 222 861</a></p>
+            <p class="ratings">4.3<span class="star">&starf;&starf;&starf;&starf;&star;</span>(106)</p>
+            <p class="price">LKR 10,700<span class="person"> /day</span></p><div class="hiddenprice">10700</div>
+           <a href="hotel_review.html?hotel_id=sch" onclick="showHotelInformation(event, this)"><button class="book_button">Book Now</button></a>
+
+
+        </div>
+        <div class="tiles"id="hs">
+            <img class="d_images" src="https://lh3.googleusercontent.com/p/AF1QipPghoSF1DJAc7GrCEv2UgxQdVYIxCwMCtIRwkU=w296-h202-n-k-no-v1-rj" alt="Hotel Sigiriya">
+            <p class="tag" id="couples">couples</p>
+            <h3 class="topic"> Hotel Sigiriya</h3> <hr>
+            <p class="description"> 3-star hotel <img class="objects" src="Assets/breakfast.png" alt="breakfast"> Breakfast(&dollar;)  <br><img class="objects" id="loc" src="Assets/location.png" alt="location"> Hotel Road, Sigiriya, Sigiriya <br><img class="objects" id="phone" src="Assets/phone.png" alt="phone"><a href="tel:0664930500"> 0664 930 500</a></p>
+            <p class="ratings">4.5<span class="star">&starf;&starf;&starf;&starf;&star;</span>(110)</p>
+            <p class="price">LKR 27,583<span class="person"> /day</span></p><div class="hiddenprice">27583</div>
+           <a href="hotel_review.html?hotel_id=hs" onclick="showHotelInformation(event, this)"><button class="book_button">Book Now</button></a>
+
+
+        </div>
+        <div class="tiles"id="krbr">
+            <img class="d_images" src="https://lh3.googleusercontent.com/p/AF1QipMHxg1wjQg6_0IuuqY3Lh5G-93NLOWaAWvlipls=w296-h202-n-k-no-v1-rj" alt="Amara Forest">
+            <p class="tag" id="couples">couples</p>
+            <h3 class="topic">Kottawatta River Bank Resort</h3> 
+            <hr>
+            <p class="description"> 4-star hotel <img class="objects" src="Assets/breakfast.png" alt="breakfast"> Breakfast(&dollar;)<br><img class="objects" id="loc" src="Assets/location.png" alt="location"> Kottawatta river bank , Udawalawa <img class="objects" id="phone" src="Assets/phone.png" alt="phone"><a href="tel:0742504719"> 074 250 4719</a></p>
+            <p class="ratings">4.2<span class="star">&starf;&starf;&starf;&starf;&star;</span>(123)</p>
+            <p class="price">LKR 14,447<span class="person"> /day</span></p><div class="hiddenprice">14447</div>
+           <a href="hotel_review.html?hotel_id=krbr" onclick="showHotelInformation(event, this)"><button class="book_button">Book Now</button></a>
+
+
+        </div>
+    </div>
+
+
+    <div class="heading">
+        <h2>Friends</h2>
+    </div>
+    <div class="container1" id="4thcontainer">
+        <button class="pre-btn" id="pb3"><img src="Assets/arrow.png" alt=""></button>
+        <button class="nxt-btn" id="nb3"><img src="Assets/arrow.png" alt=""></button>
+        <div class="tiles"id="jy">
+            <img class="d_images" src="https://lh3.googleusercontent.com/p/AF1QipMYaZDks7udkFt0K9p-Sa4ux0LQ0wF17OaXWUQi=w296-h202-n-k-no-v1-rj" alt="Jetwing Yala">
+            <p class="tag" id="friends">Friends</p>
+            <h3 class="topic"> Jetwing Yala</h3>
+            <hr>
+            <p class="description"> 4-star hotel <img class="objects" src="Assets/breakfast.png" alt="breakfast"> Breakfast<br><img class="objects" id="loc" src="Assets/location.png" alt="location"> Palatupana, Kirinda <img class="objects" id="phone" src="Assets/phone.png" alt="phone"><a href="tel:0474710710"> 0474 710 710</a></p>
+            <p class="ratings">4.6<span class="star">&starf;&starf;&starf;&starf;&star;</span>(97)</p>
+            <p class="price">LKR 71,160<span class="person"> /day</span></p><div class="hiddenprice">71160</div>
+           <a href="hotel_review.html?hotel_id=jy"onclick="showHotelInformation(event, this)"><button class="book_button">Book Now</button></a>
+
+
+        </div>
+        <div class="tiles"id="askd">
+            <img class="d_images" src="Assets/amaya_dambulla.jpg" alt="Amaya Signature Kandalama Dambulla">
+            <p class="tag" id="friends">Friends</p>
+            <h3 class="topic"> Amaya Signature Kandalama Dambulla</h3>
+            <hr>
+            <p class="description"> 5-star hotel <img class="objects" src="Assets/breakfast.png" alt="breakfast"> Breakfast<br><img class="objects" id="loc" src="Assets/location.png" alt="location"> Kap Ela, Kandalama, Dambulla<br><img class="objects" id="phone" src="Assets/phone.png" alt="phone"><a href="tel:0664461500"> 0664 461 500</a></p>
+            <p class="ratings">4.5<span class="star">&starf;&starf;&starf;&starf;&star;</span>(117)</p>
+            <p class="price">LKR 36,756<span class="person"> /day</span></p><div class="hiddenprice">36756</div>
+           <a href="hotel_review.html?hotel_id=askd" onclick="showHotelInformation(event, this)"><button class="book_button">Book Now</button></a>
+
+
+        </div>
+        <div class="tiles"id="jl">
+            <img class="d_images" src="https://lh3.googleusercontent.com/p/AF1QipMT4canLVnPaWSGCzUFD_6FYqCn15Ah_sQyPmry=w296-h202-n-k-no-v1-rj" alt="Jetwing Yala">
+            <p class="tag" id="friends">Friends</p>
+            <h3 class="topic"> Jetwing Lake</h3>
+            <hr>
+            <p class="description"> 5-star hotel <img class="objects" src="Assets/breakfast.png" alt="breakfast"> Breakfast<br><img class="objects" id="loc" src="Assets/location.png" alt="location"> Palatupana, Kirinda <img class="objects" id="phone" src="Assets/phone.png" alt="phone"><a href="tel:0474710710"> 0474 710 710</a></p>
+            <p class="ratings">4.6<span class="star">&starf;&starf;&starf;&starf;&star;</span>(113)</p>
+            <p class="price">LKR 40,817<span class="person"> /day</span></p><div class="hiddenprice">40817</div>
+           <a href="hotel_review.html?hotel_id=jl" onclick="showHotelInformation(event, this)"><button class="book_button">Book Now</button></a>
+
+
+        </div>
+        <div class="tiles"id="opd">
+            <img class="d_images" src="https://lh5.googleusercontent.com/p/AF1QipPgdJERJyDBbP1myKGSrmPgvkwV6EI3vKT8uQ6H=w253-h168-k-no" alt="Occidental Paradise Dambulla">
+            <p class="tag" id="friends">Friends</p>
+            <h3 class="topic"> Occidental Paradise Dambulla</h3> 
+            <hr>
+            <p class="description"> 4-star hotel <img class="objects" src="Assets/breakfast.png" alt="breakfast"> Breakfast(&dollar;)<br><img class="objects" id="loc" src="Assets/location.png" alt="location"> Kubukkadanwala, Dambulla <img class="objects" id="phone" src="Assets/phone.png" alt="phone"><a href="tel:0812222861"> 0812 222 861</a></p>
+            <p class="ratings">4.5<span class="star">&starf;&starf;&starf;&starf;&star;</span>(103)</p>
+            <p class="price">LKR 8,524<span class="person"> /day</span></p><div class="hiddenprice">8524</div>
+           <a href="hotel_review.html?hotel_id=opd" onclick="showHotelInformation(event, this)"><button class="book_button">Book Now</button></a>
+
+
+        </div>
+        <div class="tiles"id="hn">
+            <img class="d_images" src="https://bmkltsly13vb.compat.objectstorage.ap-mumbai-1.oraclecloud.com/cdn.dailymirror.lk/media/images/image_1458795568-cd787ceac3.jpg" alt="Heritance Negombo">
+            <p class="tag" id="friends">Friends</p>
+            <h3 class="topic"> Heritance Negombo</h3>
+            <hr>
+            <p class="description"> 5-star hotel <img class="objects" src="Assets/breakfast.png" alt="breakfast"> Breakfast<br><img class="objects" id="loc" src="Assets/location.png" alt="location"> 175 Lewis Pl, Negombo <img class="objects" id="phone" src="Assets/phone.png" alt="phone"><a href="tel:0317431431"> 0317 431 431</a></p>
+            <p class="ratings">4.5<span class="star">&starf;&starf;&starf;&starf;&star;</span>(97)</p>
+            <p class="price">LKR 35,853<span class="person"> /day</span></p><div class="hiddenprice">35853</div>
+           <a href="hotel_review.html?hotel_id=hn" onclick="showHotelInformation(event, this)"><button class="book_button">Book Now</button></a>
+
+
+        </div>
+        <div class="tiles"id="ts">
+            <img class="d_images" src="https://duqjpivknq39s.cloudfront.net/2018/12/taj-samudra-aerial-view-1.jpeg" alt="Taj Samudra, Colombo">
+            <p class="tag" id="friends">Friends</p>
+            <h3 class="topic"> Taj Samudra, Colombo</h3>
+            <hr>
+            <p class="description"> 5-star hotel <img class="objects" src="Assets/breakfast.png" alt="breakfast"> Breakfast<br><img class="objects" id="loc" src="Assets/location.png" alt="location"> 25 Galle Face Center Rd, Colombo <img class="objects" id="phone" src="Assets/phone.png" alt="phone"><a href="tel:0112446622"> 0112 446 622</a></p>
+            <p class="ratings">4.5<span class="star">&starf;&starf;&starf;&starf;&star;</span>(106)</p>
+            <p class="price">LKR 72,005<span class="person"> /day</span></p><div class="hiddenprice">72005</div>
+           <a href="hotel_review.html?hotel_id=ts" onclick="showHotelInformation(event, this)"><button class="book_button">Book Now</button></a>
+
+
+        </div>
+    </div>
+   
+    
+<footer>
+  <h3>Thambapanni</h3>
+  <div>
+    <a href="editorpagefaizul.html"> Faizul</a> |
+    <a href="editorpageosh.html"> Oshada</a> |
+    <a href="bhanukaEditor.html"> Bhanuka</a> | 
+    <a href="editorpageRuhini.html"> Ruhini</a>
+  </div>
+  © Copyright 2023 Design by Oshada Perera
+</footer>
+
+</body>
+</html>
