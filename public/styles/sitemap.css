@@ -105,7 +105,7 @@
 }
 
 #homepagetxt {
-  left: 38px;
+  left: 30px;
   bottom: 10%;
   border-radius: 9000px;
   padding: 40px;
@@ -169,17 +169,17 @@
 }
 
 #culturetxt {
-  left: 622px;
+  left: 700px;
   bottom: 75%;
   font-size: 17px;
   font-family: "Roboto", sans-serif;
 }
 #culturetxt > img {
-  width: 125px;
+  width: 120px;
 }
 
 #wildlifetxt {
-  left: 812px;
+  left: 950px;
   bottom: 77%;
   font-size: 17px;
   font-family: "Roboto", sans-serif;
@@ -189,17 +189,17 @@
 }
 
 #cusinetxt {
-  left: 900px;
+  left: 990px;
   bottom: 65%;
   font-size: 17px;
   font-family: "Roboto", sans-serif;
 }
 #cusinetxt > img {
-  width: 125px;
+  width: 110px;
 }
 
 #historytxt {
-  left: 816px;
+  left: 930px;
   bottom: 50%;
   font-size: 17px;
   font-family: "Roboto", sans-serif;

@@ -1,6 +1,11 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
 /* Header styles */
 header {
     height: 70px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -10,7 +15,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 1000;
 }
 /* Styles for the header-left section */
@@ -21,6 +26,7 @@ header {
 
 .header-left .logo {
     width: 140px;
+    transform: translateY(10%);
 }
 
 .header-left nav {
@@ -38,6 +44,15 @@ header nav ul li a {
     font-size: 18px;
     padding: 5px 10px;
     transition: 0.2s;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.ablink{
+    margin-left: 590px;
 }
 
 header nav ul li a:hover,

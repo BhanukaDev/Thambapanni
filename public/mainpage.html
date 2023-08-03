@@ -5,6 +5,15 @@
     <title>THAMBAPANNI</title>
     <link rel="stylesheet" type="text/css" href="styles/mainpage.css" />
     <link rel="stylesheet" type="text/css" href="styles/signup_button.css" />
+    <link rel="stylesheet" href="styles/headnfoot.css" />
+
+    <!-- Add fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Itim&family=Jua&family=Lilita+One&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body background="Assets/main.jpg">
     <header>
@@ -28,20 +37,23 @@
               <a href="welcomeToStore.html">Store </a>
             </li>
             <li>
-              <a href="">Quiz</a>
+              <a href="quizPage.html">Quiz</a>
             </li>
             <li>
               <a href="">Discover</a>
             </li>
             <li>
-              <a href="comment_page.html">Say, hi </a>
+              <a href="comment_page.html">FAQ</a>
+            </li>
+            <li class="ablink">
+              <a href="AboutUs.html">About Us</a>
             </li>
           </ul>
         </nav>
       </div>
       <div class="header-right">
         <div class="login-signup">
-          <a href="">Login</a> or <a href="signup_page.html">Signup</a>
+          <a href="signup_page.html">Signup</a>
         </div>
         <div class="hamburger">
           <div></div>
@@ -68,7 +80,7 @@
       </div>
     </nav>
 
-    <footer>
+    <footer style="bottom: 3%; position: relative">
       <h3 class="foothead">Thambapanni</h3>
       <div>
         <a href="editorpagefaizul.html"> Faizul</a> |
@@ -79,10 +91,10 @@
       © Copyright 2023 Design by Faizul Barie
     </footer>
     <script>
-      hamburger = document.querySelector(".hamburger");
-      nav = document.querySelector("nav");
+      hamburger = document.querySelector('.hamburger');
+      nav = document.querySelector('nav');
       hamburger.onclick = function () {
-        nav.classList.toggle("active");
+        nav.classList.toggle('active');
       };
     </script>
   </body>
