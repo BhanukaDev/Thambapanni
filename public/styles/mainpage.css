@@ -20,23 +20,25 @@ body {
     background-size: 100%;
     position: relative;
     height: 100vh;
+
 }
 
 h1 {
-    margin: 100px 20px;
+    margin: 70px 20px;
     font-size: 140px;
+    color: #000000;
     font-family: 'Lilita One', cursive;
 }
 
 .search-bar-container{
-    column-gap:1rem;
-    row-gap:1rem;
+    /* column-gap:1rem;
+    row-gap:1rem; */
 }
 
 .search-bar {
     display: flex;
     align-items: center;
-    max-width: 600px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 5px;
 }
@@ -46,8 +48,12 @@ h1 {
     padding: 17px;
     width: 100%;
     border: 1px solid #ccc;
-    border-radius: 5px 5px;
+    border-radius: 10px 0px 0px 10px;
     background: transparent;
+    font-size: 20px;
+    color: #292926;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .search-bar button {
@@ -136,7 +142,16 @@ h2 {
 
 
 
+.button-container a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+i{
+    font-size: 120px;
+}
 
 img {
     width: 100%;

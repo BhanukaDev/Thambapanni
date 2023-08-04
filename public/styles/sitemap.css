@@ -64,6 +64,7 @@
   box-shadow: 0 0 15px #242422;
   color: #2c2929e1;
   backdrop-filter: blur(10px);
+  z-index: 1000000000000;
 }
 
 #siteMapButton:hover {
@@ -77,6 +78,11 @@
   color: rgba(13, 13, 13, 0.723);
   font-family: "Roboto", sans-serif;
   animation: updown 5s infinite;
+  z-index: 100000000;
+}
+
+#forestMap{
+  z-index: 100000000;
 }
 
 .sitemaptext a {
@@ -99,9 +105,14 @@
   z-index: -99;
 }
 
+
 .sitemaptext h2 {
   font-family: "Roboto", sans-serif;
   color: #242422;
+}
+
+.sitemaptext h2:hover{
+  scale: 1.3;
 }
 
 #homepagetxt {
