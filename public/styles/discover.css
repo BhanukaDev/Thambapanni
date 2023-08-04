@@ -7,14 +7,74 @@
     -webkit-user-select: none; 
     -ms-user-select: none; 
     user-select: none; 
+  
 }
 
 .discoverPage{
     width: 100vw;
+    height: calc(100vh-70);
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  
+} 
+
+.advertisement{
+    grid-column: span 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 35px 40px;
-    margin-top: 70px;
+    padding-top: 20px;
+    border-right: 2px solid #a1a49b;
+    gap: 5px;
 
+}
+.advertisement > img {
+    width: 90%;
+}
+.advertisement h2{
+    text-decoration: underline;
+
+}
+
+.content{
+    grid-column: span 3;
+    padding: 30px 40px;
+
+}
+
+.content h1{
+    font-family: 'Jua', sans-serif;
+    line-height: 70px;
+    font-size: 80px;
+    margin-bottom: 5px;
+}
+
+.content p{
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.subtitle{
+    font-family: 'Caveat', cursive;
+    line-height: 20px;
+}
+
+.cntcards > a > img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cntcards{
+    margin-top: 20px;
+}
+.content h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.cntcards:hover{
+    transform: translateY(-2%);
 }
